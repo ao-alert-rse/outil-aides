@@ -126,12 +126,25 @@ Aucun serveur, aucune base de données, aucun compte à maintenir.
 
 ## Notes V4 (juillet 2026)
 
-- 99 → **108 aides** : 6 nouvelles (véhicules, CEC, Pacte Industrie/Entreprises) + corrections FSE+/CEE/Tremplin ADEME/Prêt Nouvelle Industrie.
-- 9 aides Bpifrance chiffrées par lecture directe en navigateur réel (bpifrance.fr bloque tout fetch automatique en 403 — impossible de les vérifier par script, seulement à la main ou via navigateur).
-- `bpi_fonds_spi2` : la fiche catalogue Bpifrance renvoie désormais "offre non disponible" — à reconfirmer avant de la proposer à un client, peut-être à retirer.
-- Nouveaux champs optionnels `duree`, `secteur_naf` / `secteur_naf_exclu`, `plafond_variable` (voir Étape 4 ci-dessus).
-- `matcherAides` filtre désormais aussi par secteur NAF (`entreprise.naf_section`, déjà récupéré via l'API mais non exploité avant) — n'est posé que sur 3 aides Pacte Industrie/Entreprises pour l'instant, à étendre au cas par cas.
+- 99 → **113 aides** : nouvelles aides (véhicules, CEC, Pacte Industrie/Entreprises, AAP Première Usine, 4 aides régionales hors IdF) + corrections FSE+/CEE/Tremplin ADEME/Prêt Nouvelle Industrie.
+- 9 aides Bpifrance chiffrées par lecture directe en navigateur réel (bpifrance.fr bloque tout fetch automatique en 403 — impossible de les vérifier par script, seulement à la main ou via navigateur type Claude in Chrome).
+- `bpi_fonds_spi2` : la fiche catalogue Bpifrance renvoie "offre non disponible" — à reconfirmer avant de la proposer à un client, peut-être à retirer.
+- `akto_proprete_bilan_competences` : le taux historique (9,15 €/h) ne correspond à aucune section du PDF AKTO 2026 actuel — repassé en N/A, à reconfirmer auprès d'un conseiller AKTO.
+- Nouveaux champs optionnels `duree`, `secteur_naf` / `secteur_naf_exclu`, `plafond_variable`, `nature` (override), `date_fin` (voir Étape 4 ci-dessus).
+- `matcherAides` filtre désormais aussi par secteur NAF (`entreprise.naf_section`, déjà récupéré via l'API mais non exploité avant) — n'est posé que sur 3 aides Pacte Industrie/Entreprises pour l'instant, à étendre au cas par cas (attention : Diag PerfImmo notamment a une éligibilité tertiaire/mixte trop floue pour une règle fiable).
+- `date_fin` désormais utilisé (`bpi_aap_premiere_usine`, clôture 06/04/2027) — ne l'utiliser que pour une vraie fermeture définitive, jamais une échéance annuelle récurrente (piège rencontré avec OPCO Santé SSSMS).
 - `verifier_liens.py` signale automatiquement les aides à revérifier (`derniere_verif` > 180 jours).
+- Filtres rapides par type (chips TEE/OPCO/RH/RSE/DEV) ajoutés au-dessus des résultats — 100% client-side.
+- **Projet versionné avec git** (`git init` fait en juillet 2026, historique propre par commit thématique). Continuer à committer par petits lots avec des messages clairs.
+- Plafond de minimis officiel confirmé (300 000 € d'aides publiques sur 3 exercices fiscaux) — trouvé sur la fiche expertAtlas. Utile si un jour on construit une alerte de dépassement dans le cumul.
+
+### Reste à faire (priorité décroissante, notée pendant la session de juillet 2026)
+
+1. **Régions hors IdF** : seules Auvergne-Rhône-Alpes, Hauts-de-France et Nouvelle-Aquitaine ont une aide spécifique en plus du portail générique. Il reste Bourgogne-Franche-Comté, Bretagne, Centre-Val de Loire, Corse, Grand Est, Normandie, Occitanie, Pays de la Loire, PACA (9 régions) — même méthode que juillet 2026 (1 agent de recherche par région, 1-2 aides phares), coût observé ~45k tokens/région.
+2. **N/A restants à vérifier manuellement** (via navigateur, pas de fetch auto possible) : durées des 4 autres Diag Bpifrance (Décarbon'Action confirmé, mais Écoconception/Impact Env./Adaptation/PerfImmo ont un montant confirmé sans durée officielle relue — à repasser si besoin), montant Fonds SPI2 (page catalogue disparue).
+3. **Alerte plafond de minimis** dans le calculateur de cumul — le seuil (300 000 €/3 ans) est confirmé, reste à identifier aide par aide lesquelles y sont soumises avant de coder l'alerte.
+4. **Petites améliorations UI restantes** (proposées, pas commencées) : badge "clôture proche" quand `date_fin` approche, légende expliquant les badges (⊘, "Sur consultation", "Montant individualisé"), compteur "aides chiffrées / à consulter" dans la barre de cumul.
+5. Si Claude in Chrome est disponible en début de session, il permet de contourner le blocage 403 de bpifrance.fr/ocapiat.fr — vérifier la connexion avant de déclarer une donnée "impossible à vérifier".
 - Champ `date_fin` du moteur de matching toujours inexploité (0 aide) — aucune échéance de clôture n'est renseignée à ce jour, alors que plusieurs sont connues (ex. AAP Bpifrance, dépôts OPCO Santé). À prioriser lors d'une prochaine session.
 - Clientèle Nam & Kouji confirmée nationale (pas seulement IdF) — les aides régionales hors IdF restent sommaires (un seul lien portail par région) : à approfondir si le volume de dossiers hors IdF le justifie.
 
