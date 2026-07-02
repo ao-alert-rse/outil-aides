@@ -1,0 +1,353 @@
+ACTIVE LE MODE RECHERCHE APPROFONDIE (Deep Research / Pro).
+
+Tu es un expert des aides financieres aux entreprises francaises (RSE, TEE, RH, Formation).
+
+Pour chaque dispositif ci-dessous, tu dois TROUVER les chiffres officiels 2026 en cherchant LARGEMENT :
+
+OU CHERCHER (par ordre de priorite) :
+1. Le PDF "Regles de prise en charge 2026" de l'OPCO concerne (ex: "regles prise en charge AKTO 2026 PDF")
+2. La fiche detaillee du dispositif sur le site officiel (PAS la page d'accueil)
+3. Les brochures, communiques de presse, FAQ officielles
+4. Les sites de partenaires officiels (DREETS, Service-Public, Bpifrance)
+5. Articles recents (<6 mois) de cabinets specialises citant les chiffres
+
+TU DOIS CHERCHER ACTIVEMENT, pas te contenter de la page fournie. Le lien fourni est un point d'entree, pas la source unique.
+
+CE QUE TU CHERCHES POUR CHAQUE AIDE :
+- Taux de prise en charge (ex: "100 % du cout pedagogique", "40 EUR/h", "50 % du cout HT")
+- Plafond annuel ou par dossier (ex: "3 000 EUR/an", "200 000 EUR max")
+- Eventuelle fourchette (montant minimum si publie)
+
+REGLES :
+- N'invente AUCUN chiffre. Mais cherche A FOND avant de dire N/A.
+- Si tu trouves un chiffre dans un PDF officiel ou un article fiable, donne-le avec sa source.
+- Si vraiment aucune source ne publie le chiffre (ex: reserve aux adherents), reponds "N/A — reserve adherents" ou "N/A — non publie".
+
+FORMAT DE REPONSE OBLIGATOIRE (un bloc par aide, separateur "|") :
+
+id | nouveau_taux | nouveau_plafond | montant_min | montant_max | source_url
+
+- nouveau_taux : texte court (ex: "40 EUR/h" ou "100 % du cout pedagogique")
+- nouveau_plafond : texte court (ex: "3 000 EUR/an" ou "200 000 EUR")
+- montant_min : nombre seul en EUR (ex: 5000), vide si pas de fourchette
+- montant_max : nombre seul en EUR (ex: 200000)
+- source_url : URL exacte de la source
+
+---
+
+LISTE DES AIDES A TRAITER :
+
+1. id=atlas_expert_rh
+   nom: expertAtlas — Prestation d'appui conseil RH
+   organisme: OPCO Atlas
+   lien officiel: https://www.opco-atlas.fr/criteres-financement/
+   taux actuel en BDD: N/A — à vérifier sur opco-atlas.fr
+   plafond actuel en BDD: N/A — à vérifier sur opco-atlas.fr
+
+2. id=opco2i_plan_formation
+   nom: Plan de développement des compétences — OPCO 2i
+   organisme: OPCO 2i
+   lien officiel: https://www.opco2i.fr/formation-et-financement/plan-developpement-competences-entreprises-50-salaries/
+   taux actuel en BDD: N/A — voir Mon Compte 2i (espace connecté)
+   plafond actuel en BDD: N/A — voir Mon Compte 2i (espace connecté)
+
+3. id=opco2i_contrat_pro
+   nom: Contrat de professionnalisation — OPCO 2i
+   organisme: OPCO 2i
+   lien officiel: https://www.opco2i.fr/formation-et-financement/alternance-et-apprentissage/
+   taux actuel en BDD: Forfait horaire selon branche
+   plafond actuel en BDD: Selon dispositif et branche
+
+4. id=opcoep_pdc_11_49
+   nom: Plan de développement des compétences — OPCO EP (11 à 49 salariés)
+   organisme: OPCO EP
+   lien officiel: https://www.opcoep.fr/criteres-de-financement
+   taux actuel en BDD: 30 € HT / h
+   plafond actuel en BDD: 35 h / salarié / an
+
+5. id=opcoep_tee_hors_plafond
+   nom: Formation transition écologique — OPCO EP (hors plafond)
+   organisme: OPCO EP
+   lien officiel: https://www.opcoep.fr/criteres-de-financement
+   taux actuel en BDD: 25 € HT / h
+   plafond actuel en BDD: Hors plafond PDC — sans limite annuelle fixe
+
+6. id=mte_diag_tee_rh
+   nom: Diag Accompagnement TEE RH
+   organisme: MTE / ADEME
+   lien officiel: https://mission-transition-ecologique.beta.gouv.fr/
+   taux actuel en BDD: Jusqu'à 50 % de l'accompagnement
+   plafond actuel en BDD: N/A — à vérifier sur mission-transition-ecologique.beta.gouv.fr
+
+7. id=mte_cee
+   nom: Certificats d'Économies d'Énergie (CEE)
+   organisme: Obligés CEE (fournisseurs d'énergie)
+   lien officiel: https://mission-transition-ecologique.beta.gouv.fr/
+   taux actuel en BDD: Variable selon travaux
+   plafond actuel en BDD: Non plafonné
+
+8. id=akto_proprete_bilan_competences
+   nom: Bilan de compétences — AKTO Propreté
+   organisme: AKTO — Branche Propreté
+   lien officiel: https://www.akto.fr/public/pdf/page-41776.pdf
+   taux actuel en BDD: 9,15 €/h
+   plafond actuel en BDD: Selon durée du bilan
+
+9. id=afdas_pdc_50plus
+   nom: Plan de développement des compétences (50 salariés et +) — AFDAS
+   organisme: AFDAS
+   lien officiel: https://www.afdas.com/entreprise/developper-les-competences-de-vos-collaborateurs/choisir-le-bon-dispositif/le-plan-de-developpement-des-competences.html
+   taux actuel en BDD: N/A — contribution conventionnelle de branche
+   plafond actuel en BDD: N/A — voir conseiller AFDAS
+
+10. id=constructys_pdc_tp_moins11
+   nom: Plan de développement des compétences — Travaux Publics <11 salariés — Constructys
+   organisme: Constructys
+   lien officiel: https://www.constructys.fr/decouvrez-les-modalites-de-participation-financiere-2026/
+   taux actuel en BDD: 15 € HT/h (standard) ou 32 €/h (transition éco/numérique)
+   plafond actuel en BDD: Selon volume + remboursement salaire CPF coconstruit (15 €/h)
+
+11. id=constructys_complement_pro_batiment
+   nom: Complément contrat de professionnalisation — Bâtiment <11 salariés — Constructys
+   organisme: Constructys
+   lien officiel: https://www.constructys.fr/decouvrez-les-modalites-de-participation-financiere-2026/
+   taux actuel en BDD: 6 €/h de formation
+   plafond actuel en BDD: Selon durée du contrat
+
+12. id=constructys_alternance
+   nom: Contrat d'apprentissage / professionnalisation — Constructys
+   organisme: Constructys
+   lien officiel: https://www.constructys.fr/financer-vos-projets-de-formation/modalites-demandes-de-prise-charge/conditions-de-prise-en-charge-2/
+   taux actuel en BDD: Coût-contrat selon référentiel branche
+   plafond actuel en BDD: Variable + aides employeur (apprenti)
+
+13. id=ocapiat_pdc_50plus
+   nom: Plan de développement des compétences (50 salariés et +) — OCAPIAT
+   organisme: OCAPIAT
+   lien officiel: https://www.ocapiat.fr/plan-developpement-competences/
+   taux actuel en BDD: N/A — contribution conventionnelle de branche
+   plafond actuel en BDD: N/A — voir conseiller OCAPIAT
+
+14. id=ocapiat_alternance
+   nom: Contrat d'apprentissage / professionnalisation — OCAPIAT
+   organisme: OCAPIAT
+   lien officiel: https://www.ocapiat.fr/plan-developpement-competences/
+   taux actuel en BDD: Coût-contrat selon référentiel branche
+   plafond actuel en BDD: Variable + aide employeur (apprenti)
+
+15. id=opcosante_pdc_sssms
+   nom: Plan de développement des compétences — Branche SSSMS — OPCO Santé
+   organisme: OPCO Santé
+   lien officiel: https://www.opco-sante.fr/le-plan-de-developpement-des-competences-pdc
+   taux actuel en BDD: N/A — voir synthèse SSSMS 2026
+   plafond actuel en BDD: N/A — voir synthèse SSSMS 2026
+
+16. id=opcosante_pdc_hp
+   nom: Plan de développement des compétences — Hospitalisation privée — OPCO Santé
+   organisme: OPCO Santé
+   lien officiel: https://www.opco-sante.fr/le-plan-de-developpement-des-competences-pdc
+   taux actuel en BDD: N/A — voir synthèse HP 2026
+   plafond actuel en BDD: N/A — voir synthèse HP 2026
+
+17. id=opcosante_pdc_spsti
+   nom: Plan de développement des compétences — Services de santé au travail (SPSTI) — OPCO Santé
+   organisme: OPCO Santé
+   lien officiel: https://www.opco-sante.fr/le-plan-de-developpement-des-competences-pdc
+   taux actuel en BDD: N/A — voir synthèse SPSTI 2026
+   plafond actuel en BDD: N/A — voir synthèse SPSTI 2026
+
+18. id=opcosante_alternance
+   nom: Contrat d'apprentissage / professionnalisation — OPCO Santé
+   organisme: OPCO Santé
+   lien officiel: https://www.opco-sante.fr/le-plan-de-developpement-des-competences-pdc
+   taux actuel en BDD: Coût-contrat selon référentiel branche
+   plafond actuel en BDD: Variable + aide employeur (apprenti)
+
+19. id=uniformation_siae
+   nom: Plan de développement des compétences — SIAE (insertion économique) — Uniformation
+   organisme: Uniformation / OPCO Cohésion Sociale
+   lien officiel: https://www.uniformation.fr/entreprise/financements/frais-annexes-et-couts-pedagogiques
+   taux actuel en BDD: 26 €/h (standard) ou 39 €/h (permis/CACES)
+   plafond actuel en BDD: Selon durée et type de formation
+
+20. id=uniformation_pic_iae
+   nom: PIC IAE — Plan d'Investissement Compétences Insertion — Uniformation
+   organisme: Uniformation / État
+   lien officiel: https://www.uniformation.fr/entreprise/actualites/financements-dans-le-cadre-du-plan-dinvestissement-competences-en-faveur-de-linsertion-pic-iae
+   taux actuel en BDD: Cofinancement État + Uniformation
+   plafond actuel en BDD: Selon dispositif
+
+21. id=uniformation_alternance
+   nom: Contrat d'apprentissage / professionnalisation — Uniformation
+   organisme: Uniformation / OPCO Cohésion Sociale
+   lien officiel: https://www.uniformation.fr/entreprise/recrutement-en-alternance/contrat-dapprentissage/financement
+   taux actuel en BDD: Coût-contrat selon référentiel branche
+   plafond actuel en BDD: Variable + aide employeur + AEFMA
+
+22. id=opcommerce_click_form
+   nom: Click & Form (catalogue formations) — OPCO Commerce
+   organisme: OPCO Commerce
+   lien officiel: https://www.lopcommerce.com/media/bqymkcgh/cpc_spp_commerce.pdf
+   taux actuel en BDD: 100 % du coût pédagogique
+   plafond actuel en BDD: 2 inscriptions par an et par entreprise
+
+23. id=opcommerce_alternance
+   nom: Contrat de professionnalisation — OPCO Commerce
+   organisme: OPCO Commerce
+   lien officiel: https://www.lopcommerce.com/media/bqymkcgh/cpc_spp_commerce.pdf
+   taux actuel en BDD: 9,15 €/h ou 15 €/h selon public
+   plafond actuel en BDD: Selon durée + frais annexes plafonnés
+
+24. id=bpi_pret_vert
+   nom: Prêt Vert — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: Prêt à taux préférentiel
+   plafond actuel en BDD: Variable selon projet
+
+25. id=bpi_pret_action_climat
+   nom: Prêt Action Climat — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: Prêt à taux préférentiel
+   plafond actuel en BDD: Variable selon projet
+
+26. id=bpi_accelerateur_decarbonation
+   nom: Accélérateur Décarbonation — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: Programme subventionné
+   plafond actuel en BDD: Sur candidature
+
+27. id=bpi_diag_decarbon_action
+   nom: Diag Décarbon'Action — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: N/A — à vérifier sur bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur bpifrance.fr
+
+28. id=bpi_diag_ecoconception
+   nom: Diag Écoconception — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: N/A — à vérifier sur bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur bpifrance.fr
+
+29. id=bpi_garantie_dev_vert
+   nom: Garantie Développement Vert — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: Garantie bancaire
+   plafond actuel en BDD: Variable selon projet
+
+30. id=pcrh_tpe_pme
+   nom: Prestation de Conseil en Ressources Humaines (PCRH)
+   organisme: État / DREETS + OPCO cofinanceur
+   lien officiel: https://travail-emploi.gouv.fr/la-prestation-de-conseil-en-ressources-humaines-pour-les-tpe-pme
+   taux actuel en BDD: Jusqu'à 100 % (État + co-financeurs dont OPCO)
+   plafond actuel en BDD: Jusqu'à 30 jours sur 12 mois
+
+31. id=bpi_mission_conseil_rse
+   nom: Mission de conseil RSE — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: N/A — à vérifier sur bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur bpifrance.fr
+
+32. id=rse_diag_rse_bpi
+   nom: Mission de conseil Stratégie Environnement — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/taxonomy/term/1076
+   taux actuel en BDD: N/A — à vérifier sur bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur bpifrance.fr
+
+33. id=bpi_diag_impact_env
+   nom: Diag Impact Environnemental — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/catalogue-offres/diag-impact-environnemental
+   taux actuel en BDD: N/A — à vérifier sur bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur bpifrance.fr
+
+34. id=bpi_diag_adaptation
+   nom: Diag Adaptation au changement climatique — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://diag.bpifrance.fr/diag-adaptation
+   taux actuel en BDD: N/A — à vérifier sur diag.bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur diag.bpifrance.fr
+
+35. id=bpi_diag_perfimmo
+   nom: Diag PerfImmo — Bpifrance
+   organisme: Bpifrance
+   lien officiel: https://www.bpifrance.fr/catalogue-offres/diag-perfimmo
+   taux actuel en BDD: N/A — à vérifier sur bpifrance.fr
+   plafond actuel en BDD: N/A — à vérifier sur bpifrance.fr
+
+36. id=ue_fse_plus
+   nom: FSE+ 2021-2027 — Fonds social européen plus
+   organisme: Commission européenne / État / Régions
+   lien officiel: https://www.europe-en-france.gouv.fr/fr/ressources/liste-operations-feder-fse-ftj-2021-2027
+   taux actuel en BDD: N/A — taux de cofinancement variable selon l'opération
+   plafond actuel en BDD: N/A — voir europe-en-france.gouv.fr
+
+37. id=idf_fonds_decarbonation
+   nom: Fonds IdF Décarbonation — Région Île-de-France
+   organisme: Région — IdF
+   lien officiel: https://www.iledefrance.fr/aides-et-appels-a-projets/fonds-ile-de-france-decarbonation
+   taux actuel en BDD: Equity minoritaire
+   plafond actuel en BDD: 3 à 10 M€ par ticket
+
+38. id=cee_indus_standardise
+   nom: CEE Standardisées — Secteur industriel
+   organisme: MTE / DGEC
+   lien officiel: https://www.ecologie.gouv.fr/politiques-publiques/operations-standardisees-deconomies-denergie
+   taux actuel en BDD: Valorisation variable selon cours CEE et fiche
+   plafond actuel en BDD: Selon volume kWh cumac généré
+
+39. id=cee_indus_specifiques
+   nom: CEE Spécifiques — Opérations sur mesure
+   organisme: MTE / DGEC
+   lien officiel: https://www.ecologie.gouv.fr/politiques-publiques/operations-specifiques-deconomies-denergie
+   taux actuel en BDD: Variable selon cours CEE
+   plafond actuel en BDD: Sur dossier
+
+40. id=ademe_fonds_chaleur
+   nom: Fonds Chaleur — ADEME
+   organisme: ADEME
+   lien officiel: https://fondschaleur.ademe.fr/
+   taux actuel en BDD: N/A — voir lien (subvention sur dossier)
+   plafond actuel en BDD: N/A — voir lien
+
+41. id=bpi_pret_nouvelle_industrie
+   nom: Prêt Nouvelle Industrie — Bpifrance
+   organisme: Bpifrance / France 2030
+   lien officiel: https://www.bpifrance.fr/catalogue-offres/pret-nouvelle-industrie
+   taux actuel en BDD: Prêt sans garantie
+   plafond actuel en BDD: 3 à 15 M€
+
+42. id=bpi_fonds_spi2
+   nom: Fonds Société de Projets Industriels 2 — Bpifrance
+   organisme: Bpifrance / France 2030
+   lien officiel: https://www.bpifrance.fr/catalogue-offres/fonds-specialises-societes-de-projets-industriels
+   taux actuel en BDD: Investissement en fonds propres
+   plafond actuel en BDD: Variable
+
+43. id=ue_feder
+   nom: FEDER 2021-2027 — Fonds européen de développement régional
+   organisme: Commission UE / Régions
+   lien officiel: https://www.europe-en-france.gouv.fr/fr/fonds-europeens-2021-2027
+   taux actuel en BDD: Cofinancement variable
+   plafond actuel en BDD: Selon programme régional
+
+44. id=agence_eau_economies
+   nom: Aides Agence de l'eau — économies et recyclage d'eau
+   organisme: Agences de l'eau
+   lien officiel: https://economie.eaufrance.fr/aides-et-programmes-dintervention
+   taux actuel en BDD: Subvention variable selon bassin
+   plafond actuel en BDD: N/A — voir Agence de bassin
+
+---
+
+RAPPEL FORMAT REPONSE : une ligne par aide, separateur "|" :
+id | nouveau_taux | nouveau_plafond | montant_min | montant_max | source_url
+
+Commence directement par la premiere ligne, sans preambule.

@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+
+<title>Le plan de développement des compétences | Afdas</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<meta name="generator" content="TYPO3 CMS" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="description" content="Un véritable levier pour adapter les compétences de vos salariés à leur poste de travail !" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.afdas.com/entreprise/developper-les-competences-de-vos-collaborateurs/choisir-le-bon-dispositif/le-plan-de-developpement-des-competences.html" />
+<meta property="og:site_name" content="Afdas" />
+<meta property="og:image" content="https://www.afdas.com/fileadmin/_processed_/7/d/csm__dinfo_2cb91760a3.jpg" />
+<meta property="og:description" content="Un véritable levier pour adapter les compétences de vos salariés à leur poste de travail !" />
+<meta property="og:title" content="Le plan de développement des compétences" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://www.afdas.com/fileadmin/_processed_/7/d/csm__dinfo_664e4a9b6c.jpg" />
+<meta name="twitter:description" content="Un véritable levier pour adapter les compétences de vos salariés à leur poste de travail !" />
+
+
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/orejime@2.2.1/dist/orejime.css" media="all">
+<link rel="stylesheet" type="text/css" href="/typo3temp/assets/compressed/merged-42bed1bb3d510972c4ebd9e43da624af.css?1772634499" media="all">
+
+
+
+
+<script>
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			/* decrypt helper function */
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			/* decrypt string */
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	/* 0-9 . , - + / : */
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	/* A-Z @ */
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	/* a-z */
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			/* decrypt spam-protected emails */
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,3);
+		}
+		
+
+/*TS_inlineJS*/
+
+var orejimeConfig = {"appElement":"body","privacyPolicy":"\/protection-des-donnees-personnelles.html","lang":"fr","mustNotice":true,"apps":[{"name":"site","title":"Fonctionalit\u00e9s du site","description":"Sans ces cookies, nous ne pouvons pas faire fonctionner certains services essentiels, comme la connexion \u00e0 votre compte utilisateur.","cookies":[],"required":true,"purposes":["site"]},{"name":"analytics","title":"Analyse des audiences","description":"Ces cookies sont utilis\u00e9s pour nous aider \u00e0 analyser le trafic et l'audience du site.","cookies":["_ga","_gat","_gid","__utma","__utmb","__utmc","__utmt","__utmz","_gat_gtag_GTM-KB84HVT","_gat_GTM-KB84HVT"],"purposes":["analytics"]}],"translations":{"fr":{"consentModal":{"title":"Les informations que nous collectons","description":"Ici, vous pouvez voir et personnaliser les informations que nous collectons.","privacyPolicy":{"name":"politique de confidentialit\u00e9","text":"Pour en savoir plus, merci de lire notre {privacyPolicy}."}},"consentNotice":{"changeDescription":"Des modifications ont eu lieu depuis votre derni\u00e8re visite, merci de mettre \u00e0 jour votre consentement.","description":"Nous collectons et traitons vos informations dans les buts suivants : {purposes}.","learnMore":"En savoir plus"},"accept":"Accepter","acceptAll":"Tout accepter","save":"Sauvegarder","saveData":"Sauvegarder ma configuration sur les informations collect\u00e9es","decline":"Continuer sans accepter","declineAll":"Continuer sans accepter","close":"Fermer","enabled":"Activ\u00e9","disabled":"D\u00e9sactiv\u00e9","app":{"purposes":"Utilisations","purpose":"Utilisation"},"poweredBy":"Propuls\u00e9 par Orejime","newWindow":"nouvelle fen\u00eatre","purposes":{"site":"fonctionnalit\u00e9s du site","analytics":"mesure de trafic et audience"}}}};
+            window.addEventListener("load", (event) => {
+                // "update to denied"
+                const manager = orejime.internals.manager
+                const originalSaveAndApplyConsents = manager.saveAndApplyConsents.bind(manager)
+                manager.saveAndApplyConsents = function() {
+                    originalSaveAndApplyConsents()
+                    consentAnalytics = manager.getConsent('analytics') ? 'granted' : 'denied'
+                    gtagSetConsent('update', consentAnalytics)
+                }
+
+                if (orejime.internals.manager.confirmed === true) {
+                    // If user consent has been made, init Google Consent Mode v2 from user consent
+                    if (orejime.internals.manager.getConsent('analytics')) {
+                        consentAnalytics = 'granted'
+                    } else {
+                        consentAnalytics = 'denied'
+                    }
+
+                    gtagSetConsent('update', consentAnalytics)
+                }
+            });
+
+
+/*]]>*/
+</script>
+
+<link rel="icon" type="image/png" sizes="114x114" href="/typo3conf/ext/site/Resources/Public/Frontend/assets/images/favicons/favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/typo3conf/ext/site/Resources/Public/Frontend/assets/images/favicons/favicon.ico">        <script>
+        function gtagSetConsent(method, analytics) {
+            console.debug(method, analytics)
+            gtag('consent', method, {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': analytics,
+                'personalization_storage': 'denied',
+                'functionality_storage': 'granted',
+                'security_storage': 'denied',
+            })
+        }
+
+        // Define dataLayer and the gtag function.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        // Set default consent to 'denied' as a placeholder
+        // Determine actual values based on your own requirements
+        gtagSetConsent('default', 'denied')
+        </script>
+
+        <!-- GA4 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-EH123ZMJ7M"></script>
+        <script>
+            gtag('js', new Date());
+            gtag('config', 'G-EH123ZMJ7M');
+        </script>
+        <!-- Google Tag Manager -->
+        <script type="opt-in" data-type="application/javascript" data-name="analytics">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KB84HVT');</script>
+        <!-- End Google Tag Manager -->
+<link rel="canonical" href="https://www.afdas.com/entreprise/developper-les-competences-de-vos-collaborateurs/choisir-le-bon-dispositif/le-plan-de-developpement-des-competences.html"/>
+</head>
+<body class="page ">
+            <!-- GA4 (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=G-EH123ZMJ7M"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End GA4 (noscript) -->
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB84HVT"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+
+    
+
+    <header class="navbar" role="banner">
+        <nav aria-label="Navigation principale" role="navigation">
+            <div class="container">
+                
+                        <a class="navbar-brand" href="/">
+                            <img src="/typo3conf/ext/site/Resources/Public/Frontend/assets/images/logo.svg" alt="AFDAS" />
+                        </a>
+                    
+
+                
+                    <div class="nav-main d-none d-lg-block">
+                        <ul class="navbar-nav">
+                            
+                                <li class="nav-item">
+                                    <a href="/entreprise.html" target="" class="nav-link" >Entreprise</a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/particulier.html" target="" class="nav-link" >Particulier</a>
+                                </li>
+                            
+                                <li class="nav-item">
+                                    <a href="/prestataire.html" target="" class="nav-link" >Prestataire</a>
+                                </li>
+                            
+                        </ul>
+                    </div>
+                
+
+                <div class="nav-right">
+                    <ul class="navbar-nav">
+                        
+                            
+                                <li class="nav-item d-none d-md-block"><a href="/en-region.html" target="" class="nav-link" >Vos contacts</a></li>
+                            
+                                <li class="nav-item d-none d-md-block"><a href="/entreprise/adherer-a-lafdas.html" target="" class="nav-link" >Adhérer</a></li>
+                            
+                        
+                        <li class="nav-item"><button type="button" class="btn btn-search" data-toggle="quick-search"><i class="far fa-search" aria-hidden="true"></i><span class="sr-only">Rechercher</span></button></li>
+                        
+                            <li class="nav-item"><a class="btn btn-primary" href="/se-connecter-a-mya.html"><i class="far fa-user" aria-hidden="true"></i> <span class="d-none d-xl-inline">Se connecter</span></a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav-secondary" aria-label="Navigation secondaire" role="navigation">
+            <button id="menu" class="btn btn-menu" data-toggle="modal" aria-haspopup="dialog" type="button">
+                <i class="fal fa-bars" aria-hidden="true"></i>
+
+                <strong>
+                    Menu
+                </strong>
+            </button>
+
+            <div class="navbar-inner navbar-inner-1" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+                <span class="menuStart" tabindex="0"></span>
+
+                <div class="text-right">
+                    <button type="button" class="btn btn-menu-close">
+                        <span class="fal fa-times" aria-hidden="true"></span>
+
+                        <strong>Fermer <span class="sr-only">le menu</span></strong>
+                    </button>
+                </div>
+
+                <div class="nav-wrap">
+                    
+                    
+                        <nav aria-label="Navigation principale" role="navigation" tabindex="1">
+                            <ul class="navbar-nav">
+                                
+                                    <li class="nav-item">
+                                        <a href="/lafdas.html" target="" class="nav-link">L&#039;Afdas</a>
+
+                                        
+                                            
+                                                <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseMenu0" aria-expanded="false" aria-controls="collapseMenu0">
+                                                    <i class="far fa-plus" aria-hidden="true"></i>
+                                                    <i class="far fa-minus" aria-hidden="true"></i>
+                                                    <span class="sr-only">Sous menu : L&#039;Afdas</span>
+                                                </button>
+
+                                                <div id="collapseMenu0" class="collapse">
+                                                    <ul>
+                                                        
+                                                            <li><a href="/lafdas/notre-histoire-dates-cles.html" target="">Notre histoire : Dates clés</a></li>
+                                                        
+                                                            <li><a href="/lafdas/nos-missions.html" target="">Nos missions</a></li>
+                                                        
+                                                            <li><a href="/lafdas/nos-branches-professionnelles.html" target="">Nos branches professionnelles</a></li>
+                                                        
+                                                            <li><a href="/lafdas/notre-gouvernance.html" target="">Notre gouvernance</a></li>
+                                                        
+                                                            <li><a href="/lafdas/notre-organisation.html" target="">Notre organisation</a></li>
+                                                        
+                                                            <li><a href="/lafdas/notre-engagement-de-proximite.html" target="">Notre engagement de proximité</a></li>
+                                                        
+                                                            <li><a href="/lafdas/notre-index-degalite-femmes-hommes.html" target="">Notre index égalité femmes-hommes</a></li>
+                                                        
+                                                            <li><a href="/lafdas/lafdas-recrute.html" target="">L&#039;Afdas recrute !</a></li>
+                                                        
+                                                            <li><a href="/lafdas/nos-appels-doffres.html" target="">Nos appels d&#039;offres</a></li>
+                                                        
+                                                            <li><a href="/lafdas/nos-rapports-dactivite-annuels.html" target="">Nos rapports d&#039;activité annuels</a></li>
+                                                        
+                                                            <li><a href="https://observatoires.afdas.com/" target="_blank">Les observatoires des métiers</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/entreprise.html" target="" class="nav-link">Entreprise</a>
+
+                                        
+                                            
+                                                <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseMenu1" aria-expanded="false" aria-controls="collapseMenu1">
+                                                    <i class="far fa-plus" aria-hidden="true"></i>
+                                                    <i class="far fa-minus" aria-hidden="true"></i>
+                                                    <span class="sr-only">Sous menu : Entreprise</span>
+                                                </button>
+
+                                                <div id="collapseMenu1" class="collapse">
+                                                    <ul>
+                                                        
+                                                            <li><a href="/entreprise/etre-contacte.html" target="">Être contacté</a></li>
+                                                        
+                                                            <li><a href="/entreprise/adherer-a-lafdas.html" target="">Adhérer à l’Afdas</a></li>
+                                                        
+                                                            <li><a href="/entreprise/recruter-vos-futurs-salaries-et-alternants.html" target="">Recruter vos futurs salariés et alternants</a></li>
+                                                        
+                                                            <li><a href="/entreprise/developper-les-competences-de-vos-collaborateurs.html" target="">Développer les compétences de vos collaborateurs</a></li>
+                                                        
+                                                            <li><a href="/entreprise/financer-vos-actions-de-formation.html" target="">Financer vos actions de formation</a></li>
+                                                        
+                                                            <li><a href="/entreprise/realiser-des-projets-rh-et-rse.html" target="">Réaliser des projets RH et RSE</a></li>
+                                                        
+                                                            <li><a href="/entreprise/impulser-une-demarche-responsable-dans-votre-entreprise.html" target="">Impulser une démarche responsable dans votre entreprise</a></li>
+                                                        
+                                                            <li><a href="/parcours-de-formation-vhss-cinema.html" target="">Parcours de formation VHSS cinéma</a></li>
+                                                        
+                                                            <li><a href="/entreprise/formation-vhss-tournage-audiovisuel.html" target="">Formation VHSS tournage audiovisuel</a></li>
+                                                        
+                                                            <li><a href="/entreprise/vous-informer-sur-vos-contributions.html" target="">Comprendre vos contributions</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/particulier.html" target="" class="nav-link">Particulier</a>
+
+                                        
+                                            
+                                                <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseMenu2" aria-expanded="false" aria-controls="collapseMenu2">
+                                                    <i class="far fa-plus" aria-hidden="true"></i>
+                                                    <i class="far fa-minus" aria-hidden="true"></i>
+                                                    <span class="sr-only">Sous menu : Particulier</span>
+                                                </button>
+
+                                                <div id="collapseMenu2" class="collapse">
+                                                    <ul>
+                                                        
+                                                            <li><a href="/particulier/formation-vhss-cinema.html" target="">Formation VHSS cinéma</a></li>
+                                                        
+                                                            <li><a href="/particulier/etre-accompagne-dans-votre-projet.html" target="">Être accompagné dans votre projet</a></li>
+                                                        
+                                                            <li><a href="/particulier/connaitre-les-dispositifs-et-les-modalites-dacces-a-la-formation.html" target="">Connaitre les dispositifs et les modalités d&#039;accès à la formation</a></li>
+                                                        
+                                                            <li><a href="/particulier/deposer-votre-dossier-de-formation-et-assurer-son-suivi.html" target="">Déposer votre dossier de formation et assurer son suivi</a></li>
+                                                        
+                                                            <li><a href="/particulier/decouvrir-nos-offres-de-formation-responsables-et-engagees.html" target="">Découvrir nos offres de formation responsables et engagées</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/prestataire.html" target="" class="nav-link">Prestataire</a>
+
+                                        
+                                            
+                                                <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseMenu3" aria-expanded="false" aria-controls="collapseMenu3">
+                                                    <i class="far fa-plus" aria-hidden="true"></i>
+                                                    <i class="far fa-minus" aria-hidden="true"></i>
+                                                    <span class="sr-only">Sous menu : Prestataire</span>
+                                                </button>
+
+                                                <div id="collapseMenu3" class="collapse">
+                                                    <ul>
+                                                        
+                                                            <li><a href="/lafdas/nos-appels-doffres.html" target="">Nos appels d&#039;offres</a></li>
+                                                        
+                                                            <li><a href="/prestataire/etre-finance-par-lafdas.html" target="">Etre financé par l&#039;Afdas</a></li>
+                                                        
+                                                            <li><a href="/prestataire/certifier-votre-offre-de-formation.html" target="">Certifier votre offre de formation</a></li>
+                                                        
+                                                            <li><a href="/prestataire/creer-votre-cfa-ou-votre-organisme-de-formation.html" target="">Créer votre CFA ou votre organisme de formation</a></li>
+                                                        
+                                                            <li><a href="/prestataire/vous-informer-sur-la-formation-a-distance.html" target="">Vous informer sur la formation à distance</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/centre-de-ressources.html" target="" class="nav-link">Ressources</a>
+
+                                        
+                                            
+                                                <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseMenu4" aria-expanded="false" aria-controls="collapseMenu4">
+                                                    <i class="far fa-plus" aria-hidden="true"></i>
+                                                    <i class="far fa-minus" aria-hidden="true"></i>
+                                                    <span class="sr-only">Sous menu : Ressources</span>
+                                                </button>
+
+                                                <div id="collapseMenu4" class="collapse">
+                                                    <ul>
+                                                        
+                                                            <li><a href="/centre-de-ressources/outils-entreprise.html" target="">Entreprise</a></li>
+                                                        
+                                                            <li><a href="/centre-de-ressources/outils-particulier.html" target="">Particulier</a></li>
+                                                        
+                                                            <li><a href="/centre-de-ressources/outils-prestataire.html" target="">Prestataire</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/faq.html" target="" class="nav-link">FAQ</a>
+
+                                        
+                                            
+                                                <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseMenu5" aria-expanded="false" aria-controls="collapseMenu5">
+                                                    <i class="far fa-plus" aria-hidden="true"></i>
+                                                    <i class="far fa-minus" aria-hidden="true"></i>
+                                                    <span class="sr-only">Sous menu : FAQ</span>
+                                                </button>
+
+                                                <div id="collapseMenu5" class="collapse">
+                                                    <ul>
+                                                        
+                                                            <li><a href="/faq/entreprise.html" target="">Entreprise</a></li>
+                                                        
+                                                            <li><a href="/faq/particulier.html" target="">Particulier</a></li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="https://services.afdas.com/login_form" target="" class="nav-link">Déclaration</a>
+
+                                        
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="/actualites/entreprise/la-boite-a-outils-alternance.html" target="" class="nav-link">La boîte à outils Alternance</a>
+
+                                        
+                                    </li>
+                                
+                            </ul>
+                        </nav>
+                    
+
+                    <hr class="d-md-none">
+                    
+
+                    
+                    <div class="nav-quick d-md-none">
+                        
+        <nav aria-label="Navigation secondaire dépliée" role="navigation" tabindex="1">
+            
+                <ul class="list-unstyled share">
+                    
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/company/afdas/?originalSubdomain=fr" target="_blank">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                Linkedin <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/afdasopco/" target="_blank">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                Facebook <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/afdas_opco/" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                Instagram <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a class="youtube" href="https://www.youtube.com/afdasformation" target="_blank">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                Youtube <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+
+                <hr>
+            
+
+            
+                <ul class="list-unstyled">
+                    
+                        <li><a href="/actualites/entreprise/la-boite-a-outils-alternance.html" target="">La boîte à outils Alternance</a></li>
+                    
+                        <li><a href="/centre-de-ressources.html" target="">Centre de ressources</a></li>
+                    
+                        <li><a href="https://formations.afdas.com/employeur/@@training_search" target="_blank">Rechercher une formation</a></li>
+                    
+                        <li><a href="https://observatoires.afdas.com/" target="_blank">Les observatoires</a></li>
+                    
+                        <li><a href="/espace-presse-2.html" target="">Espace Presse</a></li>
+                    
+                </ul>
+            
+        </nav>
+    
+                    </div>
+                    
+                </div>
+
+
+                <span class="menuEnd" tabindex="0"></span>
+            </div>
+
+            
+            <div class="nav-quick d-none d-md-block">
+                
+                    <ul class="list-unstyled share text-center">
+                        
+                            <li>
+                                <a class="linkedin" href="https://www.linkedin.com/company/afdas/?originalSubdomain=fr" target="_blank">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                    <span class="sr-only">Linkedin : Afdas</span>
+                                </a>
+                            </li>
+                        
+
+                        
+
+                        
+                            <li>
+                                <a class="facebook" href="https://www.facebook.com/afdasopco/" target="_blank">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook : Afdas</span>
+                                </a>
+                            </li>
+                        
+
+                        
+                            <li>
+                                <a class="instagram" href="https://www.instagram.com/afdas_opco/" target="_blank">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram : Afdas</span>
+                                </a>
+                            </li>
+                        
+
+                        
+                            <li>
+                                <a class="youtube" href="https://www.youtube.com/afdasformation" target="_blank">
+                                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">Youtube : Afdas</span>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                
+
+                <button class="btn btn-menu-more" type="button"><span class="sr-only">Déplier le menu rapide</span> <i class="far fa-ellipsis-h" aria-hidden="true"></i> </button>
+
+                <div class="navbar-inner navbar-inner-2" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+                    <span class="menuStart" tabindex="0"></span>
+
+                    <div class="text-right">
+                        <button type="button" class="btn btn-menu-close">
+                            <span class="fal fa-times" aria-hidden="true"></span>
+
+                            <strong>Fermer <span class="sr-only">le menu</span></strong>
+                        </button>
+                    </div>
+
+                    
+        <nav aria-label="Navigation secondaire dépliée" role="navigation" tabindex="1">
+            
+                <ul class="list-unstyled share">
+                    
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/company/afdas/?originalSubdomain=fr" target="_blank">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                Linkedin <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/afdasopco/" target="_blank">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                Facebook <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a class="instagram" href="https://www.instagram.com/afdas_opco/" target="_blank">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                                Instagram <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a class="youtube" href="https://www.youtube.com/afdasformation" target="_blank">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                Youtube <span class="sr-only">: Afdas</span>
+                            </a>
+                        </li>
+                    
+                </ul>
+
+                <hr>
+            
+
+            
+                <ul class="list-unstyled">
+                    
+                        <li><a href="/actualites/entreprise/la-boite-a-outils-alternance.html" target="">La boîte à outils Alternance</a></li>
+                    
+                        <li><a href="/centre-de-ressources.html" target="">Centre de ressources</a></li>
+                    
+                        <li><a href="https://formations.afdas.com/employeur/@@training_search" target="_blank">Rechercher une formation</a></li>
+                    
+                        <li><a href="https://observatoires.afdas.com/" target="_blank">Les observatoires</a></li>
+                    
+                        <li><a href="/espace-presse-2.html" target="">Espace Presse</a></li>
+                    
+                </ul>
+            
+        </nav>
+    
+
+                    <span class="menuEnd" tabindex="0"></span>
+                </div>
+            </div>
+            
+
+            <div class="mask"></div>
+        </nav>
+    </header>
+
+    
+
+
+
+    
+
+<div id="quick-search" class="search">
+    <div class="container">
+        <form action="/recherche.html" class="search-form">
+            <button type="button" class="btn btn-close">
+                <i class="far fa-times" aria-hidden="true"></i>
+                <span class="sr-only">Fermer</span>
+            </button>
+
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <input type="text" placeholder="Rechercher un service, un dispositif, un document..." class="form-control" name="tx_solr[q]" value="" />
+
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="far fa-search" aria-hidden="true"></i>
+                            <span class="sr-only">Rechercher</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="search-suggestions">
+            <p class="heading">Suggestions</p>
+            <ul class="list-unstyled mb-0">
+                
+                    
+                        <li><a href="https://formations.afdas.com/employeur/@@training_search"><i class="far fa-search" aria-hidden="true"></i> <span>Rechercher une formation</span></a></li>
+                    
+                        <li><a href="/entreprise/recruter-vos-futurs-salaries-et-alternants/les-contrats-en-alternance/le-contrat-dapprentissage.html"><i class="far fa-search" aria-hidden="true"></i> <span>Contrat d&#039;apprentissage</span></a></li>
+                    
+                        <li><a href="/entreprise/adherer-a-lafdas.html"><i class="far fa-search" aria-hidden="true"></i> <span>Adhérer à l’Afdas</span></a></li>
+                    
+                        <li><a href="/centre-de-ressources.html"><i class="far fa-search" aria-hidden="true"></i> <span>Accéder au centre de ressources</span></a></li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- END SEARCH -->
+
+<div class="quick-search-mask"></div>
+
+
+
+
+    <div id="main" class="main">
+        
+    
+            
+                
+
+<nav aria-label="Fil d’ariane" class="nav-breadcrumb" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 m-auto">
+                
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="/">Accueil</a>
+                        </li>
+                        
+                            <li class=" sub ">
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                <a href="/entreprise.html" target="" >
+                                Entreprise
+                                </a>
+                            </li>
+                        
+                            <li class=" sub">
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                <a href="/entreprise/developper-les-competences-de-vos-collaborateurs.html" target="" >
+                                Développer les compétences de vos collaborateurs
+                                </a>
+                            </li>
+                        
+                            <li class=" sub">
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                <a href="/entreprise/developper-les-competences-de-vos-collaborateurs/choisir-le-bon-dispositif.html" target="" >
+                                Choisir le bon dispositif
+                                </a>
+                            </li>
+                        
+                            <li class=" active ">
+                                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                                <a href="/entreprise/developper-les-competences-de-vos-collaborateurs/choisir-le-bon-dispositif/le-plan-de-developpement-des-competences.html" target="" aria-current="page">
+                                Le plan de développement des compétences
+                                </a>
+                            </li>
+                        
+                    </ol>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+            
+            <div class="article-header">
+                <div class="container">
+                    <div class="row">
+                        
+                                <div class="col-lg-8 m-auto">
+                                    <!--TYPO3SEARCH_begin-->
+                                    <h1>Le plan de développement des compétences</h1>
+                                    <!--TYPO3SEARCH_end-->
+                                </div>
+                            
+                    </div>
+                </div>
+            </div>
+        
+
+
+        
+    
+
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-7 offset-lg-1">
+                <div class="article">
+                    <!--TYPO3SEARCH_begin-->
+                    
+    <a id="c2249"></a>
+    
+    
+        
+        
+        
+
+        
+        
+
+        
+
+        <div class="row">
+            <div class="col-lg-12 ">
+                
+
+    
+
+
+
+                
+                    <h4>Un véritable levier pour adapter les compétences de vos salariés à leur poste de travail&nbsp;!</h4>
+<h3>C'est quoi ?</h3>
+<p>Créé par la Loi Avenir professionnel du 5 septembre 2018, le plan de développement des compétences est depuis le 1er janvier 2019, le nouveau «&nbsp;plan de formation&nbsp;».&nbsp;</p>
+<h6>Véritable outil de pilotage à la main de l’entreprise pour&nbsp;:&nbsp;</h6><ul> 	<li>Adapter les compétences de vos salariés à leur poste de travail.</li> 	<li>Maintenir leur capacité à occuper un emploi, au regard notamment de l'évolution des emplois, des technologies et des organisations.</li> </ul><p>Et à ces fins, vous veillez au développement de leurs compétences prévu par la plan de développement des compétences. <a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037385741" target="_blank" class="external-link-new-window" rel="noreferrer" title="Ouverture dans une nouvelle fenêtre">Article L6321-1 du Code du Travail.</a></p>
+<h3>Pour qui ?</h3><ul> 	<li>Tout salarié visé par une action de formation prévue par l'entreprise dans le cadre de son plan de développement des compétences</li> </ul><h3>Quelles formations&nbsp;?</h3>
+<h6>Le plan de développement comprend 2 types d’actions de formation :</h6><ol> 	<li>Les actions de formation obligatoires, en application d’accords ou conventions collectives.</li> 	<li>Les autres actions de formation, dites non obligatoires</li> </ol><h6>Le plan de développement des compétences peut également intégrer :</h6><ul> 	<li>Des bilans de compétences</li> 	<li>Des actions de Validation des acquis de l’expérience (VAE)</li> 	<li>Des actions de formation réalisées par des salariés en contrat d’apprentissage, au sens de l'article&nbsp;<a href="https://www.legifrance.gouv.fr/affichCodeArticle.do?cidTexte=LEGITEXT000006072050&amp;idArticle=LEGIARTI000006903992&amp;dateTexte=&amp;categorieLien=cid" target="_blank" rel="noreferrer" title="Ouverture dans une nouvelle fenêtre"><u>L. 6211-2</u></a></li> 	<li>Le socle de connaissances et de compétences CléA contextualisé au Bâtiment et Travaux Publics et le socle de compétences numériques Cléa numérique</li> </ul><h6>Les actions peuvent être réalisées selon plusieurs modalités pédagogiques :</h6><ul> 	<li>En présentiel</li> 	<li>En distanciel</li> 	<li>En format mixte</li> 	<li>En situation de travail (AFEST)</li> </ul><p><strong>Bon à savoir&nbsp;:</strong> L’action de formation est redéfinie dans le cadre de la loi « Avenir professionnel » comme un parcours pédagogique permettant d’atteindre un objectif professionnel. Cette définition beaucoup plus large et plus souple permet d’intégrer de nouvelles modalités de développement des compétences (MOOC, coaching, AFEST, etc.).</p>
+<h3>Quels financements&nbsp;?</h3><ul> 	<li><strong>Les contributions mutualisées du plan de développement&nbsp;des compétences</strong> permettent aux seules entreprises de moins de 50 salariés de financer toute action de formation définie par l’article&nbsp;<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037385657/" target="_blank" rel="noreferrer" title="Ouverture dans une nouvelle fenêtre"><strong><u>L 6313-2 du code du travail</u></strong></a>&nbsp;, dans la limite des plafonds annuels fixés par le Conseil d’Administration de l’Afdas</li> 	<li><strong>Les financements complémentaires</strong>&nbsp;sont accessibles via des plans de formation conventionnels en fonction des critères fixés par votre branche professionnelle</li> 	<li><strong>Les subventions régionales</strong>, nationales et européennes peuvent aussi financer vos projets de formation sous réserve d’éligibilité de votre entreprise et des actions de formation.</li> 	<li>Les versements volontaires que vous effectuez à l’Afdas</li> </ul><h6>Retrouvez toutes les conditions de financements dans la rubrique <u><a href="https://www.afdas.com/entreprise/financer-vos-actions-de-formation/choisir-le-bon-financement.html" target="_blank" class="external-link-new-window" title="Ouverture dans une nouvelle fenêtre">"Choisir le bon financement".</a></u></h6>
+                
+            </div>
+            
+        </div>
+    
+
+
+                    
+
+	
+        
+	
+
+
+
+                    <!--TYPO3SEARCH_end-->
+                </div>
+            </div>
+
+            <div class="col-md-5 col-lg-3">
+                <div class="context">
+                    
+    <a id="c2250"></a>
+    
+    
+
+
+        
+            <div class="card-contact">
+                
+                    <h3 class="card-contact-title">Votre boite à outils </h3>
+                
+
+                <ul class="list-link">
+                    
+                        <li>
+                            
+                                    <a href="https://afdas.test.gaya.fr/entreprise/mettre-en-oeuvre-votre-projet-rh-sur-mesure.html" target="_blank" class="link-focus" rel="noreferrer" title="Ouverture dans une nouvelle fenêtre"><span>Nos prestations d’appuis-conseils</span></a>
+                                
+                            </li>
+                    
+                        <li>
+                            
+                                    <a href="/fileadmin/user_upload/Entretien_Parcours_Professionnel_06032026.pdf" target="_blank" class="link-focus" title="Ouverture dans une nouvelle fenêtre"><strong><span>L&#039;intégrale Entretien professionnel</span> <span>(PDF - 885 Ko)</span></strong></a>
+                                
+                            </li>
+                    
+                        <li>
+                            
+                                    <a href="/fileadmin/user_upload/entretien_professionnel_essentiels_200522.pdf" target="_blank" class="link-focus" title="Ouverture dans une nouvelle fenêtre"><strong><span>L&#039;Essentiel Entretien professionnel</span> <span>(PDF - 297 Ko)</span></strong></a>
+                                
+                            </li>
+                    
+                        <li>
+                            
+                                    <a href="/fileadmin/user_upload/foad_guide_pratique_200522.pdf" target="_blank" class="link-focus" title="Ouverture dans une nouvelle fenêtre"><strong><span>Le guide La formation à distance</span> <span>(PDF - 386 Ko)</span></strong></a>
+                                
+                            </li>
+                    
+                        <li>
+                            
+                                    <a href="/entreprise/developper-les-competences-de-vos-collaborateurs/identifier-la-bonne-formation.html" class="link-focus"><span>Rubrique &quot;Identifier la bonne formation&quot;</span></a>
+                                
+                            </li>
+                    
+                </ul>
+            </div>
+        
+    
+
+
+
+    <a id="c2376"></a>
+    
+    
+    
+    
+            <div class="card-context card-context-1">
+                <h2 class="card-context-title">Vos conseillers à vos côtés pour vous accompagner </h2>
+                
+                    <p>Retrouvez vos contacts et vos rendez-vous en région</p>
+                
+
+                
+                    <p>
+                        <a href="/en-region.html" class="btn btn-primary">En savoir plus</a>
+                    </p>
+                
+
+                
+
+                
+            </div>
+        
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                
+                    <ul class="list-unstyled list-inline text-center">
+                        
+                            <li>
+                                <a href="https://formations.afdas.com/employeur/@@training_search" target="_blank">
+                                    <span>Rechercher une formation</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="https://observatoires.afdas.com/" target="_blank">
+                                    <span>Observatoires des métiers</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/lafdas/nos-appels-doffres.html" target="">
+                                    <span>Appels d&#039;offres</span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a href="/espace-presse-2.html" target="">
+                                    <span>Espace Presse</span>
+                                </a>
+                            </li>
+                        
+                    </ul>
+                
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <ul>
+                    
+                        
+                            <li>
+                                <a href="/protection-des-donnees-personnelles.html" target="">Protection données personnelles</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/conditions-generales-de-lafdas.html" target="">Conditions générales Afdas</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/alerte-professionnelle-et-ethique.html" target="">Alerte professionnelle &amp; éthique</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/homologation-anssi.html" target="">Homologation</a>
+                            </li>
+                        
+                            <li>
+                                <a href="/mentions-legales.html" target="">Mentions légales</a>
+                            </li>
+                        
+                    
+                    <li><a href="#" onclick="orejime.show(); return false;" title="Préférences cookies">Préférences cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <button type="button" class="btn-scroll-up">
+    <i class="far fa-arrow-up" aria-hidden="true"></i>
+    <span class="sr-only">Retour en haut de la page</span>
+</button>
+<script src="/typo3temp/assets/compressed/merged-512cf9b6e5f7f8bc4e5e67dda45e53c8.js?1772634499"></script>
+<script src="https://www.google.com/recaptcha/api.js?hl="></script>
+<script src="https://unpkg.com/orejime@2.2.1/dist/orejime.js"></script>
+<script src="/typo3temp/assets/compressed/merged-aae30b256ecb9be89817aa854f32cbf4.js?1772634499"></script>
+
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.afdas.com/","name":"Accueil"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.afdas.com/entreprise.html","name":"Entreprise"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.afdas.com/entreprise/developper-les-competences-de-vos-collaborateurs.html","name":"Développer les compétences de vos collaborateurs"}},{"@type":"ListItem","position":4,"item":{"@id":"https://www.afdas.com/entreprise/developper-les-competences-de-vos-collaborateurs/choisir-le-bon-dispositif.html","name":"Choisir le bon dispositif"}}]}</script>
+</body>
+</html>

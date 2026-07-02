@@ -1,0 +1,611 @@
+<!DOCTYPE html><html class="no-js" lang="fr"><head><meta charset="UTF-8" /><title>Page non trouvée - OPCO Santé</title><link rel="canonical" href="https://www.opco-sante.fr/app/uploads/2026/02/opco0240_synthese-des-prise-en-charge-sssms_pdf_site.pdf/"><link rel='stylesheet' id='front-css' href='https://www.opco-sante.fr/app/themes/default/assets/stylesheets/front-a774fa109e.css' media='all'> <script></script> <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if IE]><meta content="IE=edge" http-equiv="X-UA-Compatible" /><meta content="no" http-equiv="imagetoolbar" /><meta content="true" name="MSSmartTagsPreventParsing" />
+<![endif]--><link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="shortcut icon" href="/favicon.ico" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><meta name="apple-mobile-web-app-title" content="Opco Santé" /><link rel="manifest" href="/site.webmanifest" /><meta property="og:title" content=""><meta property="og:url" content="https://www.opco-sante.fr/app/uploads/2026/02/opco0240_synthese-des-prise-en-charge-sssms_pdf_site.pdf/"><meta property="og:image" content="https://www.opco-sante.fr/app/themes/default/assets/images/front/share-6b0693d83f.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content=""><meta name="twitter:url" content="https://www.opco-sante.fr/app/uploads/2026/02/opco0240_synthese-des-prise-en-charge-sssms_pdf_site.pdf/"><meta name="twitter:image" content="https://www.opco-sante.fr/app/themes/default/assets/images/front/share-6b0693d83f.jpg"><link rel="alternate" type="application/rss+xml" title="OPCO Santé" href="https://www.opco-sante.fr/feed/" /> <script type="text/javascript">document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script> <script type="text/javascript">(function(){(function(e,r){var t=document.createElement("link");t.rel="preconnect";t.as="script";var n=document.createElement("link");n.rel="dns-prefetch";n.as="script";var i=document.createElement("script");i.id="spcloader";i.type="text/javascript";i["async"]=true;i.charset="utf-8";var o="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+r;if(window.didomiConfig&&window.didomiConfig.user){var a=window.didomiConfig.user;var c=a.country;var d=a.region;if(c){o=o+"&country="+c;if(d){o=o+"&region="+d}}}t.href="https://sdk.privacy-center.org/";n.href="https://sdk.privacy-center.org/";i.src=o;var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s);s.parentNode.insertBefore(n,s);s.parentNode.insertBefore(i,s)})("041eeee6-8739-4c77-a1e8-442cc85d5340","WXyhEiFi")})();</script> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://analytics.opco-sante.fr/nyfu57qls01mpy9.js?awl='+i.replace(/^GTM-/,'')+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W9RG3TRT');</script> </head><body class="error error404" id="top">
+<noscript><iframe src="https://analytics.opco-sante.fr/ns.html?id=GTM-W9RG3TRT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div class="c-skiplinks c-skiplinks--focus"><nav
+class="c-skiplinks__navigation"
+role="navigation"
+aria-label="Accès rapide"
+><ul class="c-skiplinks__items"><li class="c-skiplinks__item">
+<a href="#main" class="c-skiplinks__link c-button c-button--link">
+<span class="c-button__label">Aller au contenu</span>
+</a></li><li class="c-skiplinks__item">
+<a href="#navigation" class="c-skiplinks__link c-button c-button--link">
+<span class="c-button__label">Aller à la navigation</span>
+</a></li><li class="c-skiplinks__item">
+<a href="#footer" class="c-skiplinks__link c-button c-button--link">
+<span class="c-button__label">Aller au pied de page</span>
+</a></li></ul><ul class="c-skiplinks__items"><li class="c-skiplinks__item">
+<a href="https://www.opco-sante.fr/accessibilite/" class="c-skiplinks__action c-button c-button--primary">
+<span class="c-button__label">Accessibilité</span>
+</a></li></ul></nav></div><header class="c-header js-header" id="header" role="banner"><div class="c-header__stick-container"><div class="c-header__wrapper o-wrapper o-wrapper--huge">
+<a href="https://www.opco-sante.fr" class="c-header__logo"><div class="c-logo">
+<svg class="c-logo__logo" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<path d="M14.19 52.74c0-7.4 5.17-12.29 12.36-12.29 7.2 0 12.37 4.72 12.37 12.3 0 7.57-5.17 12.26-12.37 12.26-7.19 0-12.36-4.75-12.36-12.27Zm17.7 0c0-3.91-2.09-6.18-5.34-6.18-3.24 0-5.31 2.27-5.31 6.18 0 3.92 2.08 6.16 5.31 6.16 3.24 0 5.33-2.34 5.33-6.16ZM61.77 52.79c0-7.23 4.93-12.32 12.32-12.32 3.28 0 5.61 1 7.2 2.26a7.61 7.61 0 0 1-3.5 5.07 5.48 5.48 0 0 0-3.49-1.15c-3.49 0-5.5 2.29-5.5 6.14 0 3.84 2.09 6.15 5.4 6.15 1.9 0 3.08-.61 4.05-1.51a6.93 6.93 0 0 1 3.52 5.24c-1.37 1.11-3.66 2.34-7.9 2.34-7.56 0-12.12-4.96-12.12-12.22" fill="#3E2881"/>
+<path d="M81.2 52.74c0-7.4 5.17-12.29 12.36-12.29 7.2 0 12.36 4.72 12.36 12.3 0 7.57-5.17 12.26-12.36 12.26-7.2 0-12.36-4.75-12.36-12.27Zm17.69 0c0-3.91-2.08-6.18-5.33-6.18s-5.31 2.27-5.31 6.18c0 3.92 2.08 6.16 5.31 6.16 3.23 0 5.33-2.34 5.33-6.16ZM49.03 40.56h-8.02v8.66h6.49v-3.26h1.86c2.8 0 4.03 1.23 4.03 3.06 0 1.84-1.08 3.35-3.98 3.35h-3.8a4.94 4.94 0 0 0-4.6 4.75v7.6a20.65 20.65 0 0 0 6.49 0v-6.78h1.9c6.26 0 10.6-2.98 10.6-8.99 0-5.02-2.9-8.37-10.97-8.37" fill="#3E2881"/>
+<path d="M26.1 84.78c.17-.9.68-1.58 1.33-1.95a5.8 5.8 0 0 0 3.86 1.4c1.93 0 2.78-.78 2.78-1.9 0-.93-.44-1.61-3.1-2.24-2.31-.53-4.4-1.45-4.43-4.24 0-2.44 2-4.12 5.03-4.12 2.36 0 3.86.7 4.78 1.41a2.73 2.73 0 0 1-1.22 2.02 6 6 0 0 0-3.65-1.14c-1.61 0-2.46.73-2.46 1.66 0 .92.44 1.42 2.9 2.02 2.8.68 4.63 1.78 4.65 4.37.02 2.87-2.04 4.49-5.3 4.49-2.71 0-4.32-.97-5.16-1.77M51.8 86.05c-.5.17-1.01.24-1.58.24a5.1 5.1 0 0 1-1.06-.09l-1.27-3.39h-5.62l-1.23 3.4c-.38.06-.78.08-1.14.08-.54 0-1-.07-1.4-.24l5.33-13.96c.43-.12.9-.13 1.33-.13.44 0 .85.03 1.27.13l5.38 13.96h-.01Zm-4.7-5.35L45.05 75l-2.01 5.7h4.07-.01ZM66.55 72.09v13.98c-.74.18-1.6.22-2.35.2l-7-9.85v9.77a6.45 6.45 0 0 1-2.47 0V72.23c.54-.2 1.54-.36 2.36-.22l6.98 9.9V72.1a5.96 5.96 0 0 1 2.48 0M80.88 74.32h-4.33V86.2c-.43.07-.82.13-1.28.13-.4 0-.83-.07-1.25-.13V74.32h-4.36a5.05 5.05 0 0 1 0-2.25h11.22a4.96 4.96 0 0 1 0 2.25ZM93.56 85c0 .4-.04.79-.16 1.17h-9.38V72.1h9.18a4.87 4.87 0 0 1 0 2.25h-6.66v3.52h5.92a4.96 4.96 0 0 1 0 2.25h-5.92v3.86h6.86c.12.35.16.72.16 1.06M86.23 70.33l4.09-2.79c.78.52 1.1 1.21 1.13 2.15l-4.71 1.66a1.46 1.46 0 0 1-.51-1.02ZM116.5 59.88h3.5A60.02 60.02 0 0 0 60.06 0v3.5a56.49 56.49 0 0 1 56.44 56.36" fill="#E32257"/>
+<path d="M60 116.5A56.49 56.49 0 0 1 3.5 60v-.1H0v.1a60 60 0 0 0 60 60h.06v-3.5H60Z" fill="#E32257"/>
+</svg><p class="u-hidden-visually">OPCO Santé (Accueil)</p></div>
+</a><nav id="navigation" role="navigation" aria-label="Navigation principal" class="c-header__mainnav">
+<button class="c-header__burger c-burger js-burger" id="burger" aria-expanded="false" aria-controls="navigations">
+<span class="c-burger__label">Menu</span>
+<svg class="c-burger__icon c-burger__icon--open" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-menu-open" /></svg>
+<svg class="c-burger__icon c-burger__icon--close" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-menu-close" /></svg>
+</button><div id="navigations" class="c-header__navigations js-navigations"><div class="c-header__bottom"><div class="c-header__navigation c-navigation" id="nav"><ul class="c-navigation__items"><li class="c-navigation__item  js-navigation-item" >
+<button class="js-navigation-control c-navigation__mainlink c-navitem c-navitem--main" id="navigation-control-1" aria-haspopup="true" aria-expanded="false" aria-controls="navigation-megamenu-1">
+<span class="c-navitem__label">
+Employeur
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="navigation-megamenu-1" class="c-navigation__content js-navigation-megamenu"><div class="c-navigation__subspace o-wrapper o-wrapper--huge js-subsub-havesubmenu"><div class="c-navigation__subcontent"><div class="c-navigation__title c-navigation__title--main"><p class="c-navigation__title-label" role="heading" aria-level="2">Employeur</p></div><ul class="c-navigation__subitems"><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/comment-opco-sante-vous-accompagne/" data-event="clic_navbar" data-name="Comment l&#039;OPCO Santé vous accompagne" data-level-1="Employeur" data-level-2="Comment l&#039;OPCO Santé vous accompagne">
+<span class="c-navitem__label">
+Comment l&#039;OPCO Santé vous accompagne
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/le-fonctionnement-de-la-formation-professionnelle/" data-event="clic_navbar" data-name="Le fonctionnement de la formation professionnelle" data-level-1="Employeur" data-level-2="Le fonctionnement de la formation professionnelle">
+<span class="c-navitem__label">
+Le fonctionnement de la formation professionnelle
+</span>
+</a></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-1-3">
+<span class="c-navitem__label">
+Les dispositifs de formation
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-1-3" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-1-3-heading"><div class="c-navigation__title"><p id="child-1-3-heading" class="c-navigation__title-label" role="heading" aria-level="3">Les dispositifs de formation</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/bien-choisir-son-dispositif-de-formation/" role="menuitem" data-event="clic_navbar" data-name="Bien choisir son dispositif de formation" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Bien choisir son dispositif de formation">
+<span class="c-navitem__label">
+Bien choisir son dispositif de formation
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/validation-des-acquis-de-l-experience-vae/" role="menuitem" data-event="clic_navbar" data-name="La validation des acquis de l&#039;expérience (VAE)" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="La validation des acquis de l&#039;expérience (VAE)">
+<span class="c-navitem__label">
+La validation des acquis de l&#039;expérience (VAE)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/plan-de-developpement-des-competences-pdc/" role="menuitem" data-event="clic_navbar" data-name="Le plan de développement des compétences (PDC)" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le plan de développement des compétences (PDC)">
+<span class="c-navitem__label">
+Le plan de développement des compétences (PDC)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/developpement-professionnel-continu-dpc/" role="menuitem" data-event="clic_navbar" data-name="Le développement professionnel continu (DPC)" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le développement professionnel continu (DPC)">
+<span class="c-navitem__label">
+Le développement professionnel continu (DPC)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/le-dispositif-demissionnaire/" role="menuitem" data-event="clic_navbar" data-name="Le dispositif démissionnaire" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le dispositif démissionnaire">
+<span class="c-navitem__label">
+Le dispositif démissionnaire
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/projet-de-transition-professionnelle/" role="menuitem" data-event="clic_navbar" data-name="Le projet de transition professionnelle (PTP)" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le projet de transition professionnelle (PTP)">
+<span class="c-navitem__label">
+Le projet de transition professionnelle (PTP)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/compte-personnel-de-formation-cpf/" role="menuitem" data-event="clic_navbar" data-name="Le compte personnel de formation (CPF)" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le compte personnel de formation (CPF)">
+<span class="c-navitem__label">
+Le compte personnel de formation (CPF)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/bilan-de-competences/" role="menuitem" data-event="clic_navbar" data-name="Le bilan de compétences" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le bilan de compétences">
+<span class="c-navitem__label">
+Le bilan de compétences
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/l-alternance/" role="menuitem" data-event="clic_navbar" data-name="L&#039;alternance" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="L&#039;alternance">
+<span class="c-navitem__label">
+L&#039;alternance
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/les-dispositifs-de-formation/le-conseil-en-evolution-professionnelle-cep-2/" role="menuitem" data-event="clic_navbar" data-name="Le conseil en évolution professionnelle (CEP)" data-level-1="Employeur" data-level-2="Les dispositifs de formation" data-level-3="Le conseil en évolution professionnelle (CEP)">
+<span class="c-navitem__label">
+Le conseil en évolution professionnelle (CEP)
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-1-4">
+<span class="c-navitem__label">
+Notre offre de services
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-1-4" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-1-4-heading"><div class="c-navigation__title"><p id="child-1-4-heading" class="c-navigation__title-label" role="heading" aria-level="3">Notre offre de services</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/notre-offres-de-services/on-reste-informe/" role="menuitem" data-event="clic_navbar" data-name="On reste informé" data-level-1="Employeur" data-level-2="Notre offre de services" data-level-3="On reste informé">
+<span class="c-navitem__label">
+On reste informé
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/notre-offres-de-services/on-enrichit-nos-pratiques-rh/" role="menuitem" data-event="clic_navbar" data-name="On enrichit nos pratiques RH" data-level-1="Employeur" data-level-2="Notre offre de services" data-level-3="On enrichit nos pratiques RH">
+<span class="c-navitem__label">
+On enrichit nos pratiques RH
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/notre-offres-de-services/on-monte-en-competences/" role="menuitem" data-event="clic_navbar" data-name="On monte en compétences" data-level-1="Employeur" data-level-2="Notre offre de services" data-level-3="On monte en compétences">
+<span class="c-navitem__label">
+On monte en compétences
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/notre-offres-de-services/on-recrute-autrement/" role="menuitem" data-event="clic_navbar" data-name="On recrute autrement" data-level-1="Employeur" data-level-2="Notre offre de services" data-level-3="On recrute autrement">
+<span class="c-navitem__label">
+On recrute autrement
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/notre-offres-de-services/on-agit-pour-mieux-vivre-au-travail/" role="menuitem" data-event="clic_navbar" data-name="On agit pour mieux vivre au travail" data-level-1="Employeur" data-level-2="Notre offre de services" data-level-3="On agit pour mieux vivre au travail">
+<span class="c-navitem__label">
+On agit pour mieux vivre au travail
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/notre-offres-de-services/on-parle-ecologie/" role="menuitem" data-event="clic_navbar" data-name="On parle écologie" data-level-1="Employeur" data-level-2="Notre offre de services" data-level-3="On parle écologie">
+<span class="c-navitem__label">
+On parle écologie
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-1-5">
+<span class="c-navitem__label">
+Financer vos formations
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-1-5" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-1-5-heading"><div class="c-navigation__title"><p id="child-1-5-heading" class="c-navigation__title-label" role="heading" aria-level="3">Financer vos formations</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/financer-vos-formations/les-regles-de-prise-en-charge/" role="menuitem" data-event="clic_navbar" data-name="Les règles de prise en charge" data-level-1="Employeur" data-level-2="Financer vos formations" data-level-3="Les règles de prise en charge">
+<span class="c-navitem__label">
+Les règles de prise en charge
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/financer-vos-formations/outil-de-simulation/" role="menuitem" data-event="clic_navbar" data-name="Nos outils de simulation CIFA" data-level-1="Employeur" data-level-2="Financer vos formations" data-level-3="Nos outils de simulation CIFA">
+<span class="c-navitem__label">
+Nos outils de simulation CIFA
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://webservice.opco-sante.fr/" role="menuitem" data-event="clic_navbar" data-name="Accès webservices pour les demandes de prise en charge et suivre son activité de formation" data-level-1="Employeur" data-level-2="Financer vos formations" data-level-3="Accès webservices pour les demandes de prise en charge et suivre son activité de formation">
+<span class="c-navitem__label">
+Accès webservices pour les demandes de prise en charge et suivre son activité de formation
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/tpme-evolution/" data-event="clic_navbar" data-name="Nos engagements pour les TPME" data-level-1="Employeur" data-level-2="Nos engagements pour les TPME">
+<span class="c-navitem__label">
+Nos engagements pour les TPME
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/employeur/nos-engagements-pour-les-esat/" data-event="clic_navbar" data-name="Nos engagements pour les ESAT" data-level-1="Employeur" data-level-2="Nos engagements pour les ESAT">
+<span class="c-navitem__label">
+Nos engagements pour les ESAT
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="u-external c-navigation__link c-navitem c-navitem--sub" href="https://catalogue.opco-sante.fr/Portal/Default.aspx" target="_blank" rel="noopener noreferrer" aria-label="Notre catalogue de formations (nouvel onglet)" data-event="clic_navbar" data-name="Notre catalogue de formations" data-level-1="Employeur" data-level-2="Notre catalogue de formations">
+<span class="c-navitem__label">
+Notre catalogue de formations
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/nos-outils/" data-event="clic_navbar" data-name="Nos outils" data-level-1="Employeur" data-level-2="Nos outils">
+<span class="c-navitem__label">
+Nos outils
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-navigation-close">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><div class="c-navigation__side js-navigation-side"><div class="c-navigation__title"><p role="heading" aria-level="2">Accès rapides</p>
+<button class="c-navigation__button c-navigation__button--close js-navigation-close">
+<svg class="c-navigation__button-icon" width="32" height="32" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-cross" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><ul class="c-navigation__informations"><li class="c-navigation__information">
+<a href="https://catalogue.opco-sante.fr/Portal/Default.aspx?page=1" data-event="clic_cta" data-name="Catalogue de formations" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Catalogue de formations (nouvel onglet)">
+<span class="c-navitem__label">
+Catalogue de formations
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-check-document" /></svg>
+</a></li><li class="c-navigation__information">
+<a href="https://cartographie.opco-sante.fr/" data-event="clic_cta" data-name="Cartographie des emplois et des compétences" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Cartographie des emplois et des compétences (nouvel onglet)">
+<span class="c-navitem__label">
+Cartographie des emplois et des compétences
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-eye" /></svg>
+</a></li></ul><div class="c-navigation__panel c-information">
+<svg class="c-information__icon" width="40" height="40" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-info" /></svg><div class="c-information__content"><p class="c-information__title" role="heading" aria-level="3">Découvrez la cartographie des métiers et des compétences pour accompagner au mieux les parcours de mobilité ou d&#039;évolution professionnelle.</p>
+<a href="https://cartographie.opco-sante.fr/" target="_blank" rel="noopener noreferrer" aria-label="Découvrir la cartographie (nouvel onglet)" class="c-button c-button--link">
+<span class="c-button__label">Découvrir la cartographie</span>
+</a></div></div></div></div></div></li><li class="c-navigation__item  js-navigation-item" >
+<button class="js-navigation-control c-navigation__mainlink c-navitem c-navitem--main" id="navigation-control-2" aria-haspopup="true" aria-expanded="false" aria-controls="navigation-megamenu-2">
+<span class="c-navitem__label">
+Salarié
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="navigation-megamenu-2" class="c-navigation__content js-navigation-megamenu"><div class="c-navigation__subspace o-wrapper o-wrapper--huge js-subsub-havesubmenu"><div class="c-navigation__subcontent"><div class="c-navigation__title c-navigation__title--main"><p class="c-navigation__title-label" role="heading" aria-level="2">Salarié</p></div><ul class="c-navigation__subitems"><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/comment-l-opco-sante-vous-accompagne/" data-event="clic_navbar" data-name="Comment l&#039;OPCO Santé vous accompagne" data-level-1="Salarié" data-level-2="Comment l&#039;OPCO Santé vous accompagne">
+<span class="c-navitem__label">
+Comment l&#039;OPCO Santé vous accompagne
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/le-fonctionnement-de-la-formation-professionnelle/" data-event="clic_navbar" data-name="Le fonctionnement de la formation professionnelle" data-level-1="Salarié" data-level-2="Le fonctionnement de la formation professionnelle">
+<span class="c-navitem__label">
+Le fonctionnement de la formation professionnelle
+</span>
+</a></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-2-3">
+<span class="c-navitem__label">
+Les dispositifs de formation
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-2-3" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-2-3-heading"><div class="c-navigation__title"><p id="child-2-3-heading" class="c-navigation__title-label" role="heading" aria-level="3">Les dispositifs de formation</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/bien-choisir-son-dispositif-de-formation/" role="menuitem" data-event="clic_navbar" data-name="Bien choisir son dispositif de formation" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Bien choisir son dispositif de formation">
+<span class="c-navitem__label">
+Bien choisir son dispositif de formation
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/validation-des-acquis-de-l-experience-vae/" role="menuitem" data-event="clic_navbar" data-name="Validation des acquis de l&#039;expérience (VAE)" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Validation des acquis de l&#039;expérience (VAE)">
+<span class="c-navitem__label">
+Validation des acquis de l&#039;expérience (VAE)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/plan-de-developpement-des-competences-pdc/" role="menuitem" data-event="clic_navbar" data-name="Plan de développement des compétences (PDC)" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Plan de développement des compétences (PDC)">
+<span class="c-navitem__label">
+Plan de développement des compétences (PDC)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/developpement-professionnel-continu-dpc/" role="menuitem" data-event="clic_navbar" data-name="Le développement professionnel continu (DPC)" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Le développement professionnel continu (DPC)">
+<span class="c-navitem__label">
+Le développement professionnel continu (DPC)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/le-dispositif-demissionnaire/" role="menuitem" data-event="clic_navbar" data-name="Le dispositif démissionnaire" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Le dispositif démissionnaire">
+<span class="c-navitem__label">
+Le dispositif démissionnaire
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/projet-de-transition-professionnelle/" role="menuitem" data-event="clic_navbar" data-name="Le projet de transition professionnelle (PTP)" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Le projet de transition professionnelle (PTP)">
+<span class="c-navitem__label">
+Le projet de transition professionnelle (PTP)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/compte-personnel-de-formation-cpf/" role="menuitem" data-event="clic_navbar" data-name="Compte personnel de formation (CPF)" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Compte personnel de formation (CPF)">
+<span class="c-navitem__label">
+Compte personnel de formation (CPF)
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/bilan-de-competences/" role="menuitem" data-event="clic_navbar" data-name="Bilan de compétences" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Bilan de compétences">
+<span class="c-navitem__label">
+Bilan de compétences
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/l-alternance/" role="menuitem" data-event="clic_navbar" data-name="L&#039;alternance" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="L&#039;alternance">
+<span class="c-navitem__label">
+L&#039;alternance
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-dispositifs-de-formation/le-conseil-en-evolution-professionnelle-cep/" role="menuitem" data-event="clic_navbar" data-name="Le conseil en évolution professionnelle (CEP)" data-level-1="Salarié" data-level-2="Les dispositifs de formation" data-level-3="Le conseil en évolution professionnelle (CEP)">
+<span class="c-navitem__label">
+Le conseil en évolution professionnelle (CEP)
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/les-responsabilites-de-l-entreprise/" data-event="clic_navbar" data-name="Les responsabilités de l&#039;entreprise" data-level-1="Salarié" data-level-2="Les responsabilités de l&#039;entreprise">
+<span class="c-navitem__label">
+Les responsabilités de l&#039;entreprise
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/construire-mon-projet/" data-event="clic_navbar" data-name="Construire mon projet" data-level-1="Salarié" data-level-2="Construire mon projet">
+<span class="c-navitem__label">
+Construire mon projet
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/salarie/financer-mon-projet/" data-event="clic_navbar" data-name="Financer mon projet" data-level-1="Salarié" data-level-2="Financer mon projet">
+<span class="c-navitem__label">
+Financer mon projet
+</span>
+</a></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-2-7">
+<span class="c-navitem__label">
+Les métiers du secteur
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-2-7" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-2-7-heading"><div class="c-navigation__title"><p id="child-2-7-heading" class="c-navigation__title-label" role="heading" aria-level="3">Les métiers du secteur</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://cartographie.opco-sante.fr/" role="menuitem" data-event="clic_navbar" data-name="La cartographie des emplois et des compétences" data-level-1="Salarié" data-level-2="Les métiers du secteur" data-level-3="La cartographie des emplois et des compétences">
+<span class="c-navitem__label">
+La cartographie des emplois et des compétences
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://diplomesdelavie.fr/comment-rejoindre-le-secteur/tout-savoir-sur-la-reconversion-professionnelle" role="menuitem" data-event="clic_navbar" data-name="La reconversion professionnelle" data-level-1="Salarié" data-level-2="Les métiers du secteur" data-level-3="La reconversion professionnelle">
+<span class="c-navitem__label">
+La reconversion professionnelle
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://diplomesdelavie.fr/pourquoi-rejoindre-le-secteur-prive-de-la-sante/faites-carriere-dans-un-secteur-aux-valeurs-fortes" role="menuitem" data-event="clic_navbar" data-name="Une carrière dans un secteur vital" data-level-1="Salarié" data-level-2="Les métiers du secteur" data-level-3="Une carrière dans un secteur vital">
+<span class="c-navitem__label">
+Une carrière dans un secteur vital
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem " >
+<a class="u-external c-navigation__link c-navitem c-navitem--sub" href="https://diplomesdelavie.fr/" target="_blank" rel="noopener noreferrer" aria-label="Rejoindre le secteur privé de la santé (nouvel onglet)" data-event="clic_navbar" data-name="Rejoindre le secteur privé de la santé" data-level-1="Salarié" data-level-2="Rejoindre le secteur privé de la santé">
+<span class="c-navitem__label">
+Rejoindre le secteur privé de la santé
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/nos-outils/" data-event="clic_navbar" data-name="Nos outils" data-level-1="Salarié" data-level-2="Nos outils">
+<span class="c-navitem__label">
+Nos outils
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-navigation-close">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><div class="c-navigation__side js-navigation-side"><div class="c-navigation__title"><p role="heading" aria-level="2">Accès rapides</p>
+<button class="c-navigation__button c-navigation__button--close js-navigation-close">
+<svg class="c-navigation__button-icon" width="32" height="32" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-cross" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><ul class="c-navigation__informations"><li class="c-navigation__information">
+<a href="https://catalogue.opco-sante.fr/Portal/Default.aspx?page=1" data-event="clic_cta" data-name="Catalogue de formations" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Catalogue de formations (nouvel onglet)">
+<span class="c-navitem__label">
+Catalogue de formations
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-check-document" /></svg>
+</a></li><li class="c-navigation__information">
+<a href="https://cartographie.opco-sante.fr/" data-event="clic_cta" data-name="Cartographie des emplois et des compétences" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Cartographie des emplois et des compétences (nouvel onglet)">
+<span class="c-navitem__label">
+Cartographie des emplois et des compétences
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-eye" /></svg>
+</a></li></ul></div></div></div></li><li class="c-navigation__item  js-navigation-item" >
+<button class="js-navigation-control c-navigation__mainlink c-navitem c-navitem--main" id="navigation-control-3" aria-haspopup="true" aria-expanded="false" aria-controls="navigation-megamenu-3">
+<span class="c-navitem__label">
+Représentant du personnel
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="navigation-megamenu-3" class="c-navigation__content js-navigation-megamenu"><div class="c-navigation__subspace o-wrapper o-wrapper--huge js-subsub-havesubmenu"><div class="c-navigation__subcontent"><div class="c-navigation__title c-navigation__title--main"><p class="c-navigation__title-label" role="heading" aria-level="2">Représentant du personnel</p></div><ul class="c-navigation__subitems"><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/representant-du-personnel/comment-l-opco-sante-vous-accompagne/" data-event="clic_navbar" data-name="Comment l&#039;OPCO Santé vous accompagne ?" data-level-1="Représentant du personnel" data-level-2="Comment l&#039;OPCO Santé vous accompagne ?">
+<span class="c-navitem__label">
+Comment l&#039;OPCO Santé vous accompagne ?
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/representant-du-personnel/fonctionnement-de-la-formation-professionnelle/" data-event="clic_navbar" data-name="Le fonctionnement de la formation professionnelle" data-level-1="Représentant du personnel" data-level-2="Le fonctionnement de la formation professionnelle">
+<span class="c-navitem__label">
+Le fonctionnement de la formation professionnelle
+</span>
+</a></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-3-3">
+<span class="c-navitem__label">
+Les dispositifs de formation
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-3-3" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-3-3-heading"><div class="c-navigation__title"><p id="child-3-3-heading" class="c-navigation__title-label" role="heading" aria-level="3">Les dispositifs de formation</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/representant-du-personnel/dispositifs-de-formation/les-dispositifs-a-la-main-de-l-employeur/" role="menuitem" data-event="clic_navbar" data-name="Les dispositifs à la main de l&#039;employeur" data-level-1="Représentant du personnel" data-level-2="Les dispositifs de formation" data-level-3="Les dispositifs à la main de l&#039;employeur">
+<span class="c-navitem__label">
+Les dispositifs à la main de l&#039;employeur
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/representant-du-personnel/dispositifs-de-formation/les-dispositifs-a-la-main-du-salarie/" role="menuitem" data-event="clic_navbar" data-name="Les dispositifs à la main du salarié" data-level-1="Représentant du personnel" data-level-2="Les dispositifs de formation" data-level-3="Les dispositifs à la main du salarié">
+<span class="c-navitem__label">
+Les dispositifs à la main du salarié
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/representant-du-personnel/integrer-la-formation-au-dialogue-social/" data-event="clic_navbar" data-name="L&#039;intégration de la formation au dialogue social" data-level-1="Représentant du personnel" data-level-2="L&#039;intégration de la formation au dialogue social">
+<span class="c-navitem__label">
+L&#039;intégration de la formation au dialogue social
+</span>
+</a></li><li class="c-navigation__subitem c-navigation__subitem--parent js-subsub-havechild" >
+<button class="c-navigation__link js-subsub-opener c-navitem c-navitem--sub" aria-haspopup="true" aria-expanded="false" aria-controls="child-3-5">
+<span class="c-navitem__label">
+Financement de la formation
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="child-3-5" class="c-navigation__subsubspace" hidden role="group" aria-labelledby="child-3-5-heading"><div class="c-navigation__title"><p id="child-3-5-heading" class="c-navigation__title-label" role="heading" aria-level="3">Financement de la formation</p></div><ul class="c-navigation__subsubitems" role="menu"><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://webservice.opco-sante.fr/" role="menuitem" data-event="clic_navbar" data-name="Accès webservices sur espace IRP" data-level-1="Représentant du personnel" data-level-2="Financement de la formation" data-level-3="Accès webservices sur espace IRP">
+<span class="c-navitem__label">
+Accès webservices sur espace IRP
+</span>
+</a></li><li class="c-navigation__subsubitem" role="none">
+<a class="c-navigation__subsublink c-navitem c-navitem--sub" href="https://www.opco-sante.fr/representant-du-personnel/financement-de-la-formation/regles-de-prise-en-charge/" role="menuitem" data-event="clic_navbar" data-name="Les règles de prise en charge" data-level-1="Représentant du personnel" data-level-2="Financement de la formation" data-level-3="Les règles de prise en charge">
+<span class="c-navitem__label">
+Les règles de prise en charge
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-subsub-back-submenu">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le sous-menu</span>
+</button></div></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/nos-outils/" data-event="clic_navbar" data-name="Nos outils" data-level-1="Représentant du personnel" data-level-2="Nos outils">
+<span class="c-navitem__label">
+Nos outils
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-navigation-close">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><div class="c-navigation__side js-navigation-side"><div class="c-navigation__title"><p role="heading" aria-level="2">Accès rapides</p>
+<button class="c-navigation__button c-navigation__button--close js-navigation-close">
+<svg class="c-navigation__button-icon" width="32" height="32" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-cross" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><ul class="c-navigation__informations"><li class="c-navigation__information">
+<a href="https://catalogue.opco-sante.fr/Portal/Default.aspx?page=1" data-event="clic_cta" data-name="Catalogue de formations" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Catalogue de formations (nouvel onglet)">
+<span class="c-navitem__label">
+Catalogue de formations
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-check-document" /></svg>
+</a></li><li class="c-navigation__information">
+<a href="https://cartographie.opco-sante.fr/" data-event="clic_cta" data-name="Cartographie des emplois et des compétences" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Cartographie des emplois et des compétences (nouvel onglet)">
+<span class="c-navitem__label">
+Cartographie des emplois et des compétences
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-eye" /></svg>
+</a></li></ul></div></div></div></li><li class="c-navigation__item  js-navigation-item" >
+<button class="js-navigation-control c-navigation__mainlink c-navitem c-navitem--main" id="navigation-control-4" aria-haspopup="true" aria-expanded="false" aria-controls="navigation-megamenu-4">
+<span class="c-navitem__label">
+Prestataire
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-chevron-down" /></svg>
+</button><div id="navigation-megamenu-4" class="c-navigation__content js-navigation-megamenu"><div class="c-navigation__subspace o-wrapper o-wrapper--huge js-subsub-havesubmenu"><div class="c-navigation__subcontent"><div class="c-navigation__title c-navigation__title--main"><p class="c-navigation__title-label" role="heading" aria-level="2">Prestataire</p></div><ul class="c-navigation__subitems"><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/prestataire/comment-l-opco-sante-vous-accompagne/" data-event="clic_navbar" data-name="Comment l&#039;OPCO Santé vous accompagne" data-level-1="Prestataire" data-level-2="Comment l&#039;OPCO Santé vous accompagne">
+<span class="c-navitem__label">
+Comment l&#039;OPCO Santé vous accompagne
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/prestataire/le-fonctionnement-de-la-formation-professionnelle/" data-event="clic_navbar" data-name="Le fonctionnement de la formation professionnelle" data-level-1="Prestataire" data-level-2="Le fonctionnement de la formation professionnelle">
+<span class="c-navitem__label">
+Le fonctionnement de la formation professionnelle
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="u-external c-navigation__link c-navitem c-navitem--sub" href="https://plateformeof.opco-sante.fr/Account/Login?ReturnUrl=/" target="_blank" rel="noopener noreferrer" aria-label="CFA : accès à la plateforme de gestion des contrats d&#039;apprentissage (nouvel onglet)" data-event="clic_navbar" data-name="CFA : accès à la plateforme de gestion des contrats d&#039;apprentissage" data-level-1="Prestataire" data-level-2="CFA : accès à la plateforme de gestion des contrats d&#039;apprentissage">
+<span class="c-navitem__label">
+CFA : accès à la plateforme de gestion des contrats d&#039;apprentissage
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/prestataire/demarche-d-habilitation/" data-event="clic_navbar" data-name="Démarche d’habilitation" data-level-1="Prestataire" data-level-2="Démarche d’habilitation">
+<span class="c-navitem__label">
+Démarche d’habilitation
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/prestataire/nos-appels-d-offres/" data-event="clic_navbar" data-name="Répondre à nos appels d’offres" data-level-1="Prestataire" data-level-2="Répondre à nos appels d’offres">
+<span class="c-navitem__label">
+Répondre à nos appels d’offres
+</span>
+</a></li><li class="c-navigation__subitem " >
+<a class="c-navigation__link c-navitem c-navitem--sub" href="https://www.opco-sante.fr/nos-outils/" data-event="clic_navbar" data-name="Nos outils" data-level-1="Prestataire" data-level-2="Nos outils">
+<span class="c-navitem__label">
+Nos outils
+</span>
+</a></li></ul>
+<button class="c-navigation__button c-navigation__button--back js-navigation-close">
+<svg class="c-navigation__button-icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-chevron-left" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><div class="c-navigation__side js-navigation-side"><div class="c-navigation__title"><p role="heading" aria-level="2">Accès rapides</p>
+<button class="c-navigation__button c-navigation__button--close js-navigation-close">
+<svg class="c-navigation__button-icon" width="32" height="32" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-cross" /></svg>
+<span class="u-hidden-visually">Fermer le menu</span>
+</button></div><ul class="c-navigation__informations"><li class="c-navigation__information">
+<a href="https://catalogue.opco-sante.fr/Portal/Default.aspx?page=1" data-event="clic_cta" data-name="Catalogue de formations" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Catalogue de formations (nouvel onglet)">
+<span class="c-navitem__label">
+Catalogue de formations
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-check-document" /></svg>
+</a></li><li class="c-navigation__information">
+<a href="https://cartographie.opco-sante.fr/" data-event="clic_cta" data-name="Cartographie des emplois et des compétences" data-position="Navbar menu" class="c-navitem c-navitem--utils" target="_blank" rel="noopener noreferrer" aria-label="Cartographie des emplois et des compétences (nouvel onglet)">
+<span class="c-navitem__label">
+Cartographie des emplois et des compétences
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-eye" /></svg>
+</a></li></ul></div></div></div></li><li class="c-navigation__item ">
+<a class="c-navigation__mainlink c-navitem c-navitem--revert c-navitem--main" href="https://www.opco-sante.fr/rechercher/">
+<span class="c-navitem__label">
+Rechercher
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-search-normal" /></svg>
+</a></li></ul></div><ul class="c-header__buttons"><li class="c-header__button">
+<a class=" c-button c-button--header c-button--hadicon" href="https://www.opco-sante.fr/contact/"><span class="c-button__icon c-icon--button-header c-icon">
+<svg width="24" height="24" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-e-mail" /></svg>
+</span>
+<span class="c-button__label">Contact</span>
+</a></li><li class="c-header__button">
+<a href="https://www.opco-sante.fr/mon-espace/" class=" c-button c-button--sublabel c-button--primary c-button--header c-button--hadicon"><span class="c-button__icon c-icon--button-header c-icon">
+<svg width="24" height="24" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-user" /></svg>
+</span>
+<span class="c-button__labels">
+<span class="c-button__label">Mon espace</span>
+<span class="c-button__sublabel">Webservices</span>
+</span>
+</a></li></ul></div><div class="c-header__top"><ul class="c-header__utils c-header__utils--left"><li class="c-header__util">
+<a href="https://www.opco-sante.fr/qui-sommes-nous/" data-event="clic_cta" data-name="Qui sommes-nous ?" data-position="Header" class="c-navitem c-navitem--utils">
+<span class="c-navitem__label">
+Qui sommes-nous ?
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-info" /></svg>
+</a></li><li class="c-header__util">
+<a href="https://www.opco-sante.fr/nos-outils/" data-event="clic_cta" data-name="Nos outils" data-position="Header" class="c-navitem c-navitem--utils">
+<span class="c-navitem__label">
+Nos outils
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-lamp" /></svg>
+</a></li><li class="c-header__util">
+<a href="https://www.opco-sante.fr/l-observatoire/" data-event="clic_cta" data-name="L&#039;Observatoire" data-position="Header" class="c-navitem c-navitem--utils">
+<span class="c-navitem__label">
+L&#039;Observatoire
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-book" /></svg>
+</a></li></ul><ul class="c-header__utils c-header__utils--right"><li class="c-header__util">
+<a href="https://www.opco-sante.fr/actualites/" data-event="clic_cta" data-name="Actualités" data-position="Header" class="c-navitem c-navitem--utils">
+<span class="c-navitem__label">
+Actualités
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-news" /></svg>
+</a></li><li class="c-header__util">
+<a href="https://www.opco-sante.fr/agenda/" data-event="clic_cta" data-name="Agenda" data-position="Header" class="c-navitem c-navitem--utils">
+<span class="c-navitem__label">
+Agenda
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-calendar" /></svg>
+</a></li><li class="c-header__util">
+<a href="https://www.opco-sante.fr/webinaires/" data-event="clic_cta" data-name="Webinaires" data-position="Header" class="c-navitem c-navitem--utils">
+<span class="c-navitem__label">
+Webinaires
+</span>
+<svg class="c-navitem__icon" width="18" height="18" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-acf-7ead9cc034.svg#sprite-video" /></svg>
+</a></li></ul></div></div></nav></div></div></header><main id="main" tabindex="-1" role="main"><header class="c-heading"><div class="c-heading__wrapper o-wrapper o-wrapper--large"><div class="c-heading__bottom"><div class="c-heading__content"><h1 class="c-heading__title">
+Page introuvable</h1><div class="c-heading__text">
+La page demandée n’existe pas, a été déplacée ou n’est plus disponible.</div></div></div></div></header><section class="o-blocks" id="content"><div class="o-blocks__item"><div class="o-wrapper o-wrapper--background"><div class="c-background c-background--cta o-stack o-stack--250"><h2  class="u-color-foreground">Pour reprendre votre navigation</h2><p class="u-medium-text o-wrapper o-wrapper--nocenter o-wrapper--wide" style="--size:43.125rem">Vous pouvez retourner sur la page d’accueil pour reprendre votre navigation. Vous pouvez également nous contacter si vous ne trouvez pas ce que vous recherchez.</p><div class="o-flex o-flex--150 o-flex--wrap">
+<a href="https://www.opco-sante.fr/" class="c-button c-button--primary">
+<span class="c-button__label">Revenir à la page d’accueil</span>
+</a></div></div></div></div></section></main><footer class="c-footer" id="footer" role="contentinfo"><div class="c-footer__wrapper o-wrapper o-wrapper--large"><div class="c-footer__top"><div class="c-footer__presentation"><div class="c-logo c-footer__logo c-logo--dark c-logo--vibration">
+<svg class="c-logo__logo" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136">
+<path d="M16.08 59.78c0-8.4 5.86-13.94 14.01-13.94 8.16 0 14.02 5.35 14.02 13.94 0 8.58-5.86 13.9-14.02 13.9-8.15 0-14-5.38-14-13.9Zm20.05 0c0-4.44-2.36-7.01-6.04-7.01s-6.02 2.57-6.02 7c0 4.44 2.36 6.98 6.02 6.98 3.67 0 6.04-2.65 6.04-6.97ZM70 59.82c0-8.18 5.6-13.96 13.97-13.96 3.71 0 6.36 1.15 8.15 2.57a8.63 8.63 0 0 1-3.95 5.74 6.21 6.21 0 0 0-3.96-1.3c-3.95 0-6.23 2.6-6.23 6.95 0 4.36 2.36 6.98 6.1 6.98 2.17 0 3.5-.7 4.6-1.71a7.85 7.85 0 0 1 4 5.94c-1.56 1.26-4.16 2.64-8.97 2.64-8.55 0-13.72-5.61-13.72-13.85" fill="white"/>
+<path d="M92.02 59.78c0-8.4 5.86-13.94 14.02-13.94 8.15 0 14 5.35 14 13.94 0 8.58-5.85 13.9-14 13.9-8.16 0-14.02-5.38-14.02-13.9Zm20.05 0c0-4.44-2.35-7.01-6.03-7.01-3.69 0-6.03 2.57-6.03 7 0 4.44 2.36 6.98 6.03 6.98 3.66 0 6.03-2.65 6.03-6.97ZM55.57 45.97h-9.09v9.82h7.35v-3.7h2.11c3.18 0 4.57 1.39 4.57 3.47s-1.22 3.8-4.52 3.8h-4.3a5.6 5.6 0 0 0-5.2 5.37v8.62a23.4 23.4 0 0 0 7.34 0v-7.68h2.16c7.09 0 12.01-3.38 12.01-10.19 0-5.7-3.29-9.5-12.43-9.5" fill="white"/>
+<path d="M29.6 96.08c.17-1.01.75-1.79 1.5-2.2 1 .9 2.53 1.59 4.37 1.59 2.18 0 3.15-.89 3.15-2.16 0-1.05-.5-1.83-3.52-2.54-2.62-.6-5-1.65-5.03-4.81 0-2.76 2.27-4.67 5.7-4.67 2.68 0 4.38.8 5.43 1.6a3.1 3.1 0 0 1-1.39 2.3 6.8 6.8 0 0 0-4.13-1.3c-1.83 0-2.8.83-2.8 1.88 0 1.05.5 1.61 3.3 2.29 3.16.77 5.24 2.02 5.26 4.96.03 3.24-2.3 5.08-6 5.08-3.07 0-4.9-1.1-5.85-2M58.7 97.52c-.56.2-1.14.27-1.79.27-.39 0-.84-.01-1.2-.1l-1.43-3.84H47.9l-1.39 3.85c-.43.08-.88.1-1.29.1-.61 0-1.14-.09-1.6-.28l6.06-15.82a5.93 5.93 0 0 1 1.5-.15c.5 0 .97.03 1.44.15l6.1 15.82h-.02Zm-5.32-6.06-2.33-6.45-2.28 6.45h4.62-.01ZM75.42 81.7v15.85c-.83.2-1.82.24-2.66.23L64.83 86.6v11.07a7.32 7.32 0 0 1-2.8 0V81.86c.6-.23 1.74-.4 2.68-.24l7.9 11.22V81.7a6.77 6.77 0 0 1 2.81 0M91.67 84.23h-4.91v13.45c-.49.08-.94.15-1.45.15-.46 0-.94-.08-1.42-.15V84.23h-4.94a5.72 5.72 0 0 1 0-2.55h12.72a5.62 5.62 0 0 1 0 2.55ZM106.03 96.34c0 .45-.04.89-.17 1.32H95.22V81.7h10.41a5.5 5.5 0 0 1 0 2.55h-7.55v3.99h6.71a5.61 5.61 0 0 1 0 2.55h-6.72v4.37h7.79c.13.4.17.83.17 1.21M97.72 79.71l4.64-3.16c.89.58 1.26 1.37 1.29 2.44l-5.34 1.87a1.65 1.65 0 0 1-.59-1.15ZM132.03 67.86H136A68.02 68.02 0 0 0 68.07 0v3.97a64.02 64.02 0 0 1 63.96 63.88" fill="#E32257"/>
+<path d="M68 132.03A64.02 64.02 0 0 1 3.97 68v-.13H0V68A68 68 0 0 0 68 136h.06v-3.97H68Z" fill="#E32257"/>
+</svg><div class="c-logo__deco">
+<img class="c-logo__vibration" src="https://www.opco-sante.fr/app/themes/default/assets/images/front/vibration-34d2b37385.svg" width="1597" height="1597" alt="" loading="lazy" aria-hidden="true"></div><p class="u-hidden-visually">OPCO Santé</p></div><div class="c-footer__contact"><p class="c-footer__title" role="heading" aria-level="2">Contact et réseaux sociaux</p><div class="c-footer__contacts">
+<a class="c-footer__button c-button c-button--primary c-button--dark" href="https://www.opco-sante.fr/contact/" data-event="clic_cta" data-name="Nous contacter" data-position="Footer">
+<span class="c-button__label">Nous contacter</span>
+</a><ul class="c-footer__socialmedia"><li>
+<a href="https://www.linkedin.com/company/opco-sante/" target="_blank" rel="noopenner noreferrer" aria-label="LinkedIn (nouvel onglet)">
+<svg class="c-footer__socialicon" width="24" height="24" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-linkedin" /></svg>
+<span class="u-hidden-visually">LinkedIn</span>
+</a></li><li>
+<a href="https://www.youtube.com/channel/UCgpflhuEfufagLTjH4LAqoA" target="_blank" rel="noopenner noreferrer" aria-label="Youtube (nouvel onglet)">
+<svg class="c-footer__socialicon" width="24" height="24" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-youtube" /></svg>
+<span class="u-hidden-visually">Youtube</span>
+</a></li><li>
+<a href="https://www.facebook.com/OPCOSante" target="_blank" rel="noopenner noreferrer" aria-label="Facebook (nouvel onglet)">
+<svg class="c-footer__socialicon" width="24" height="24" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-facebook" /></svg>
+<span class="u-hidden-visually">Facebook</span>
+</a></li></ul></div></div></div><div class="c-footer__newsletter"><div class="c-footer__newsletter-content"><div class="c-footer__newsletter-titles"><p class="c-footer__newsletter-title" role="heading" aria-level="2">Inscrivez-vous à notre newsletter</p><p class="c-footer__subtitle">Et ne manquez rien de nos actus</p></div>
+<a href="https://www.opco-sante.fr/Abonnement_Newsletter" data-event="clic_cta" data-name="S&#039;inscrire" data-position="Footer" class="c-button c-button--primary c-button--dark">
+<span class="c-button__label">S&#039;inscrire</span>
+</a></div>
+<svg class="c-footer__icon" width="64" height="64" aria-hidden="true"><use xlink:href="https://www.opco-sante.fr/app/themes/default/assets/images/sprite-ee69de1b01.svg#sprite-letter" /></svg></div></div><div class="c-footer__main"><ul class="c-footer__menus"><li class="c-footer__items"><p class="c-footer__menu-title" role="heading" aria-level="2">Accès Rapide</p><ul class="c-footer__menu"><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/employeur/" class="c-footer__link" data-event='clic_footer' data-name="Employeur">Employeur</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/representant-du-personnel/" class="c-footer__link" data-event='clic_footer' data-name="Représentant du personnel">Représentant du personnel</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/salarie/" class="c-footer__link" data-event='clic_footer' data-name="Salarié">Salarié</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/prestataire/" class="c-footer__link" data-event='clic_footer' data-name="Prestataire">Prestataire</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/qui-sommes-nous/" class="c-footer__link" data-event='clic_footer' data-name="Qui sommes-nous ?">Qui sommes-nous ?</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/nos-outils/" class="c-footer__link" data-event='clic_footer' data-name="Nos outils">Nos outils</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/l-observatoire/" class="c-footer__link" data-event='clic_footer' data-name="L&#039;Observatoire">L&#039;Observatoire</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/espace-presse/" class="c-footer__link" data-event='clic_footer' data-name="Espace presse">Espace presse</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/qui-sommes-nous/nous-rejoindre/" class="c-footer__link" data-event='clic_footer' data-name="Nous rejoindre">Nous rejoindre</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/un-site-accessible/" class="c-footer__link" data-event='clic_footer' data-name="Un site accessible">Un site accessible</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/un-site-eco-concu-par-engagement/" class="c-footer__link" data-event='clic_footer' data-name="Un site éco-conçu">Un site éco-conçu</a></li><li class="c-footer__item">
+<a href="https://metiers-santesocial.fr/" class="c-footer__link" data-event='clic_footer' data-name="Métiers Santé Social">Métiers Santé Social</a></li></ul></li><li class="c-footer__items"><p class="c-footer__menu-title" role="heading" aria-level="2">S&#039;informer</p><ul class="c-footer__menu"><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/actualites/" class="c-footer__link" data-event='clic_footer' data-name="Actualités">Actualités</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/agenda/" class="c-footer__link" data-event='clic_footer' data-name="Agenda">Agenda</a></li><li class="c-footer__item">
+<a href="https://www.opco-sante.fr/webinaires/" class="c-footer__link" data-event='clic_footer' data-name="Webinaires">Webinaires</a></li></ul></li></ul></div><div class="c-footer__bottom"><ul class="c-footer__legals"><li class="c-footer__item-legals">
+<a href="https://www.opco-sante.fr/plan-du-site/" class="c-footer__legal">Plan du site</a></li><li class="c-footer__item-legals">
+<a href="https://www.opco-sante.fr/mentions-legales/" class="c-footer__legal">Mentions légales</a></li><li class="c-footer__item-legals">
+<a href="https://www.opco-sante.fr/politique-de-confidentialite/" class="c-footer__legal">Données personnelles</a></li><li class="c-footer__item-legals">
+<a href="javascript:Didomi.preferences.show()" class="c-footer__legal">Paramétrer les cookies</a></li></ul><p>OPCO Santé 2026</p></div></div></footer> <script type="application/ld+json">[{"@context":"https:\/\/schema.org","@type":"Organization","name":"OPCO Sant\u00e9","url":"https:\/\/www.opco-sante.fr\/","logo":"https:\/\/www.opco-sante.fr\/app\/themes\/default\/assets\/images\/front\/logo-909912debb.svg","address":{"@type":"PostalAddress","streetAddress":"31 rue Anatole France","addressLocality":"Levallois-Perret","postalCode":"92300","addressCountry":"France"},"sameAs":["https:\/\/www.facebook.com\/OPCOSante\/","http:\/\/www.youtube.com\/@opcosante","https:\/\/linkedin.com\/company\/opco-sante"]}]</script> <script id="vendors-js" src="https://www.opco-sante.fr/app/themes/default/assets/javascripts/vendors-9ce8ae505e.js"></script> <script id="front-js" src="https://www.opco-sante.fr/app/themes/default/assets/javascripts/front-9003aae5fa.js"></script> </body></html>
