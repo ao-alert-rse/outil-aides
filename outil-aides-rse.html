@@ -238,6 +238,36 @@
     background: var(--sable);
   }
 
+  .filtre-type-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 24px 0;
+  }
+
+  .filtre-type-chip {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 16px;
+    border: 1px solid var(--sable);
+    background: #fff;
+    color: var(--ardoise);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+
+  .filtre-type-chip:hover {
+    border-color: var(--vert-clair);
+  }
+
+  .filtre-type-chip.active {
+    background: var(--vert);
+    border-color: var(--vert);
+    color: #fff;
+  }
+
   .aides-liste {
     display: grid;
     gap: 14px;
@@ -2875,7 +2905,7 @@ function rendreCarte(aide) {
             <span class="aide-check-box"></span>
           </label>`;
   return `
-    <div class="aide-card" data-aide-id="${aide.id}">
+    <div class="aide-card" data-aide-id="${aide.id}" data-type="${aide.type}">
       <div>
         <div class="aide-header">
           ${selecteur}
@@ -3104,6 +3134,13 @@ async function lancer() {
       html += `<div class="state-empty"><div class="icon">🔍</div><p>Aucune aide identifiée pour ce profil.<br>Vérifiez l'OPCO sélectionné ou élargissez les critères.</p></div>`;
     } else {
       html += rendreBarreSelection();
+      const TYPE_LABELS = { TEE: "Transition écologique", OPCO: "Formation / OPCO", RH: "RH", RSE: "RSE", DEV: "Développement éco." };
+      const TYPES_ORDER = ["TEE", "OPCO", "RH", "RSE", "DEV"];
+      const typesPresents = TYPES_ORDER.filter(t => aides.some(a => a.type === t));
+      html += `<div class="filtre-type-bar">
+        <button class="filtre-type-chip active" data-type="" onclick="appliquerFiltreType('')">Tous (${total})</button>
+        ${typesPresents.map(t => `<button class="filtre-type-chip" data-type="${t}" onclick="appliquerFiltreType('${t}')">${TYPE_LABELS[t]} (${aides.filter(a => a.type === t).length})</button>`).join("")}
+      </div>`;
       const SECTION_TITRES = {
         "Formation":           "Formation &amp; Alternance",
         "Prêt":                "Prêts &amp; Garanties",
@@ -3138,6 +3175,19 @@ async function lancer() {
 
     main.innerHTML = html;
   }
+}
+
+function appliquerFiltreType(type) {
+  document.querySelectorAll('.aide-card').forEach(c => {
+    c.style.display = (!type || c.dataset.type === type) ? "" : "none";
+  });
+  document.querySelectorAll('.aides-liste').forEach(liste => {
+    const visible = [...liste.querySelectorAll('.aide-card')].some(c => c.style.display !== "none");
+    liste.style.display = visible ? "" : "none";
+    const titre = liste.previousElementSibling;
+    if (titre && titre.classList.contains('section-titre')) titre.style.display = visible ? "" : "none";
+  });
+  document.querySelectorAll('.filtre-type-chip').forEach(b => b.classList.toggle('active', b.dataset.type === type));
 }
 
 function reinitialiser() {
