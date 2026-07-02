@@ -466,6 +466,19 @@
     flex-shrink: 0;
   }
 
+  .badge-cloture {
+    display: inline-block;
+    background: #FFF0DE;
+    color: #A15C00;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+
   .btn-export {
     position: absolute;
     top: 18px; right: 22px;
@@ -2888,6 +2901,14 @@ function calculerCumul(aides) {
   return { sumMin, sumMax, nbChiffrees, nbNonChiffrees };
 }
 
+function badgeCloture(aide) {
+  if (!aide.date_fin) return "";
+  const today = new Date().toISOString().slice(0, 10);
+  const joursRestants = Math.round((new Date(aide.date_fin) - new Date(today)) / 86400000);
+  if (joursRestants < 0 || joursRestants > 60) return "";
+  return `<span class="badge-cloture">⏳ Clôture le ${aide.date_fin.split("-").reverse().join("/")}</span>`;
+}
+
 function rendreCarte(aide) {
   const est = estimationLabel(aide);
   const nature = inferNature(aide);
@@ -2911,6 +2932,7 @@ function rendreCarte(aide) {
           ${selecteur}
           <span class="aide-nom">${aide.nom}</span>
           ${tagLabel(aide.type)}
+          ${badgeCloture(aide)}
         </div>
         <p class="aide-desc">${aide.description}</p>
         <div class="aide-meta">
@@ -2959,7 +2981,7 @@ function rendreBarreSelection() {
   return `
     <div class="cumul-card sticky-cumul" id="barre-selection">
       <button class="btn-export" onclick="exporterPDF()" title="Exporter la sélection en PDF">📄 Export PDF</button>
-      <div class="cumul-label print-title">Estimation des aides mobilisables — <span id="cumul-count">0</span> aide(s) sélectionnée(s)</div>
+      <div class="cumul-label print-title">Estimation des aides mobilisables — <span id="cumul-count">0</span> aide(s) sélectionnée(s)<span id="cumul-detail"></span></div>
       <div class="cumul-val" id="cumul-val">
         <span class="cumul-vide">Cochez des aides pour estimer votre cumul</span>
       </div>
@@ -2975,6 +2997,7 @@ function recalculerSelection() {
   const c = calculerCumul(aidesSel);
 
   const elCount = document.getElementById('cumul-count');
+  const elDetail = document.getElementById('cumul-detail');
   const elVal = document.getElementById('cumul-val');
   const elNote = document.getElementById('cumul-note');
   if (!elCount || !elVal || !elNote) return;
@@ -2982,10 +3005,13 @@ function recalculerSelection() {
   elCount.textContent = aidesSel.length;
 
   if (aidesSel.length === 0) {
+    if (elDetail) elDetail.textContent = '';
     elVal.innerHTML = '<span class="cumul-vide">Cochez des aides pour estimer votre cumul</span>';
     elNote.innerHTML = '';
     return;
   }
+
+  if (elDetail) elDetail.textContent = ` (${c.nbChiffrees} chiffrée${c.nbChiffrees > 1 ? "s" : ""} / ${c.nbNonChiffrees} à consulter)`;
 
   if (c.nbChiffrees === 0) {
     elVal.innerHTML = '<span class="cumul-vide">Aucune aide chiffrable dans la sélection</span>';
@@ -3167,6 +3193,9 @@ async function lancer() {
         <span class="legende-item"><span class="tag tag-rh">RH</span> Ressources humaines</span>
         <span class="legende-item"><span class="tag tag-rse">RSE</span> Responsabilité sociale</span>
         <span class="legende-item"><span class="tag tag-dev">DEV</span> Développement économique</span>
+        <span class="legende-item"><span class="aide-select-disabled" style="margin-right:0;">⊘</span> Prêt/investissement, non cumulable</span>
+        <span class="legende-item"><span class="meta-na">Sur consultation</span> = montant non communiqué publiquement</span>
+        <span class="legende-item"><span class="meta-variable">Montant individualisé</span> = calculé au cas par cas par l'organisme</span>
         <span class="legende-item" style="margin-left:auto; font-size:11px; color:var(--gris);">
           ${total} aide${total > 1 ? "s" : ""} identifiée${total > 1 ? "s" : ""}
         </span>
