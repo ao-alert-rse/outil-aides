@@ -556,8 +556,6 @@
     .cumul-sep { color: #999 !important; }
     .cumul-note { color: #555 !important; font-size: 9pt !important; margin-top: 8px; line-height: 1.4; }
     .cumul-vide { color: #999 !important; font-size: 11pt !important; }
-    .minimis-alert { background: #FFF8F0 !important; border-color: #F5C98A !important; color: #7A4A10 !important; font-size: 9pt !important; }
-    .minimis-alert strong { color: #C85A1E !important; }
 
     .aides-liste { display: block !important; }
     .aides-liste::before {
@@ -636,17 +634,6 @@
     line-height: 1.5;
   }
   .cumul-note strong { color: #fff; }
-  .minimis-alert {
-    margin-top: 14px;
-    padding: 10px 14px;
-    background: rgba(245, 201, 138, 0.12);
-    border: 1px solid #F5C98A;
-    border-radius: 6px;
-    font-size: 11.5px;
-    color: var(--sable);
-    line-height: 1.5;
-  }
-  .minimis-alert strong { color: #F5C98A; }
 
   .aide-lien a {
     display: inline-flex;
@@ -1132,11 +1119,8 @@ function estimationLabel(aide) {
   return null;
 }
 
-const PLAFOND_MINIMIS = 300000; // aides de minimis : 300 000 € sur 3 exercices fiscaux glissants (règlement UE 2023/2831)
-
 function calculerCumul(aides) {
   let sumMin = 0, sumMax = 0, nbChiffrees = 0, nbNonChiffrees = 0;
-  let sumMinimisMax = 0, nbMinimisAVerifier = 0;
   aides.forEach(a => {
     const mn = a.montant_min, mx = a.montant_max;
     if ((mn === null || mn === undefined) && (mx === null || mx === undefined)) {
@@ -1147,13 +1131,8 @@ function calculerCumul(aides) {
       sumMin += (mn !== null && mn !== undefined) ? mn : (mx || 0);
       sumMax += (mx !== null && mx !== undefined) ? mx : (mn || 0);
     }
-    if (a.minimis === true) {
-      sumMinimisMax += (mx !== null && mx !== undefined) ? mx : (mn || 0);
-    } else if (a.minimis === null || a.minimis === undefined) {
-      nbMinimisAVerifier++;
-    }
   });
-  return { sumMin, sumMax, nbChiffrees, nbNonChiffrees, sumMinimisMax, nbMinimisAVerifier };
+  return { sumMin, sumMax, nbChiffrees, nbNonChiffrees };
 }
 
 function badgeCloture(aide) {
@@ -1241,7 +1220,6 @@ function rendreBarreSelection() {
         <span class="cumul-vide">Cochez des aides pour estimer votre cumul</span>
       </div>
       <div class="cumul-note" id="cumul-note"></div>
-      <div class="minimis-alert" id="minimis-alert" style="display:none;"></div>
     </div>
   `;
 }
@@ -1256,7 +1234,6 @@ function recalculerSelection() {
   const elDetail = document.getElementById('cumul-detail');
   const elVal = document.getElementById('cumul-val');
   const elNote = document.getElementById('cumul-note');
-  const elMinimis = document.getElementById('minimis-alert');
   if (!elCount || !elVal || !elNote) return;
 
   elCount.textContent = aidesSel.length;
@@ -1265,23 +1242,7 @@ function recalculerSelection() {
     if (elDetail) elDetail.textContent = '';
     elVal.innerHTML = '<span class="cumul-vide">Cochez des aides pour estimer votre cumul</span>';
     elNote.innerHTML = '';
-    if (elMinimis) elMinimis.style.display = 'none';
     return;
-  }
-
-  if (elMinimis) {
-    if (c.sumMinimisMax === 0 && c.nbMinimisAVerifier === 0) {
-      elMinimis.style.display = 'none';
-    } else {
-      elMinimis.style.display = '';
-      const pct = Math.round((c.sumMinimisMax / PLAFOND_MINIMIS) * 100);
-      const depasse = c.sumMinimisMax > PLAFOND_MINIMIS;
-      let html = `<strong>${depasse ? "⚠ Plafond de minimis dépassé" : "Plafond de minimis"}</strong> : ${formatEUR(c.sumMinimisMax)} sur ${formatEUR(PLAFOND_MINIMIS)} (${pct}%) cumulés sur 3 exercices fiscaux glissants, à condition qu'aucune autre aide de minimis n'ait été perçue par ailleurs par l'entreprise.`;
-      if (c.nbMinimisAVerifier > 0) {
-        html += `<br>+ ${c.nbMinimisAVerifier} aide${c.nbMinimisAVerifier > 1 ? "s" : ""} sélectionnée${c.nbMinimisAVerifier > 1 ? "s" : ""} dont le régime d'aide n'est pas confirmé (à vérifier auprès de l'organisme).`;
-      }
-      elMinimis.innerHTML = html;
-    }
   }
 
   if (elDetail) elDetail.textContent = ` (${c.nbChiffrees} chiffrée${c.nbChiffrees > 1 ? "s" : ""} / ${c.nbNonChiffrees} à consulter)`;

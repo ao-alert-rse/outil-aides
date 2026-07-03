@@ -27,7 +27,6 @@ create table if not exists aides (
   montant_max numeric,
   duree text,
   date_fin date,
-  minimis boolean,
   plafond_variable boolean,
   nature text
 );
@@ -38,3 +37,8 @@ create policy "aides_select_authenticated"
   on aides for select
   to authenticated
   using (true);
+
+-- Migration ponctuelle (2026-07-03) : la fonctionnalité "plafond de minimis"
+-- a été retirée de l'outil. Si la colonne minimis existe déjà sur une base
+-- créée avant cette date, la supprimer avec :
+-- alter table aides drop column if exists minimis;
