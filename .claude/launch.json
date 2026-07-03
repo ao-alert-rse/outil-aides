@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8080"],
       "port": 8080
+    },
+    {
+      "name": "Webapp Supabase (outil-aides-webapp)",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8081", "--directory", "C:\\Users\\BenjaminBARONI\\OneDrive - Felps Group\\Documents\\outil-aides-webapp"],
+      "port": 8081
     }
   ]
 }
