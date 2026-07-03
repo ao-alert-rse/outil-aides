@@ -556,6 +556,8 @@
     .cumul-sep { color: #999 !important; }
     .cumul-note { color: #555 !important; font-size: 9pt !important; margin-top: 8px; line-height: 1.4; }
     .cumul-vide { color: #999 !important; font-size: 11pt !important; }
+    .minimis-alert { background: #FFF8F0 !important; border-color: #F5C98A !important; color: #7A4A10 !important; font-size: 9pt !important; }
+    .minimis-alert strong { color: #C85A1E !important; }
 
     .aides-liste { display: block !important; }
     .aides-liste::before {
@@ -737,6 +739,8 @@
     main { padding: 32px 20px 60px; }
     .entreprise-card { grid-template-columns: 1fr 1fr; }
     .aide-card { grid-template-columns: 1fr; }
+    .btn-export { position: static; display: block; width: 100%; margin-bottom: 14px; text-align: center; }
+    .cumul-card { padding: 20px; }
   }
 </style>
 </head>
@@ -1136,6 +1140,7 @@ const AIDES = [
   },
   {
     id: "mte_diag_tee_rh",
+    plafond_variable: true,
     minimis: true,
     type: "TEE",
     nom: "Diag Accompagnement TEE RH",
@@ -1479,7 +1484,7 @@ const AIDES = [
     derniere_verif: "2026-06-25",
     montant_min: 15,
     montant_max: 40
-  },
+  },
   {
     id: "ocapiat_bilan_competences",
     minimis: false,
@@ -2462,6 +2467,7 @@ const AIDES = [
   },
   {
     id: "ademe_act_pas_a_pas_industrie",
+    plafond_variable: true,
     minimis: true,
     type: "TEE",
     nom: "ACT Pas à Pas — Développer sa stratégie de décarbonation (Pacte Industrie)",
@@ -2499,6 +2505,7 @@ const AIDES = [
   },
   {
     id: "ademe_pacte_industrie_coaching_financement",
+    plafond_variable: true,
     minimis: true,
     type: "TEE",
     nom: "Concrétiser son projet d'investissement bas carbone ou d'économies d'énergie — Coaching Financement (Pacte Industrie)",
@@ -2535,6 +2542,7 @@ const AIDES = [
   },
   {
     id: "bpi_aap_premiere_usine",
+    plafond_variable: true,
     minimis: false,
     type: "DEV",
     nom: "AAP Première Usine — France 2030 (Bpifrance)",
@@ -2554,6 +2562,7 @@ const AIDES = [
   },
   {
     id: "ara_financement_energie",
+    plafond_variable: true,
     minimis: null,
     type: "TEE",
     nom: "Financer des projets innovants et/ou expérimentaux autour de l'énergie — Région Auvergne-Rhône-Alpes",
@@ -2609,6 +2618,7 @@ const AIDES = [
   },
   {
     id: "na_competitivite_energetique",
+    plafond_variable: true,
     minimis: null,
     type: "TEE",
     nom: "Compétitivité énergétique des entreprises — Région Nouvelle-Aquitaine",
@@ -2760,6 +2770,7 @@ const AIDES = [
   },
   {
     id: "occ_pass_conseil_rh",
+    plafond_variable: true,
     minimis: true,
     type: "RH",
     nom: "Pass Conseil RH — Région Occitanie",
@@ -2813,7 +2824,7 @@ const AIDES = [
     montant_min: null,
     montant_max: 9500,
     duree: "3 ans, suivi semestriel par l'expert"
-  },
+  },
 ];
 
 // ══════════════════════════════════════════════
@@ -3330,7 +3341,7 @@ async function lancer() {
     // alerte données simulées
     html += `
       <div class="alerte">
-        ⚠︎ &nbsp;Données entreprise issues de l'API recherche-entreprises.api.gouv.fr (DINUM). OPCO auto-détecté via la table IDCC→OPCO du Ministère du Travail (19/07/2019, 332 IDCC). Toutes les aides restent à valider auprès de l'organisme concerné. BDD aides vérifiée : juin 2026.
+        ⚠︎ &nbsp;Données entreprise issues de l'API recherche-entreprises.api.gouv.fr (DINUM). OPCO auto-détecté via la table IDCC→OPCO du Ministère du Travail (19/07/2019, 332 IDCC). Toutes les aides restent à valider auprès de l'organisme concerné. BDD aides vérifiée : juillet 2026.
       </div>
     `;
 
