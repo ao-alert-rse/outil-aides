@@ -765,7 +765,7 @@
   <div class="form-grid">
     <div class="field">
       <label>Numéro SIRET</label>
-      <input type="text" id="siret" placeholder="ex. 35292749400056" maxlength="14">
+      <input type="text" id="siret" placeholder="ex. 35292749400056" maxlength="23" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 14)">
     </div>
     <button class="btn-search" onclick="lancer()">Rechercher →</button>
     <button class="btn-reset" onclick="reinitialiser()">Réinitialiser</button>
