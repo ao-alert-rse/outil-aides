@@ -3002,15 +3002,17 @@ function inferNature(aide) {
   if (aide.nature) return aide.nature;
   const t = ((aide.nom || "") + " " + (aide.description || "") + " " + (aide.taux || "") + " " + (aide.plafond || "")).toLowerCase();
   // 1. Investissement / Equity (avant Prêt car peut contenir "prêt" dans description)
-  if (/fonds propres|equity|prise de participation|capital-risque|venture|fonds spi|fnvi|société de projets/i.test(t)) return "Investissement";
+  if (/fonds propres|equity|prise de participation|capital-risque|\bventures?\b|fonds spi|fnvi|société de projets/i.test(t)) return "Investissement";
   // 2. Prêt / Garantie
-  if (/\bprêt\b|\bpret\b|garantie bancaire|garantie déve/i.test(t)) return "Prêt";
+  if (/\bprêts?\b|\bprets?\b|garantie bancaire|garantie déve/i.test(t)) return "Prêt";
   // 3. Étude & Diagnostic
-  if (/diagnostic|\bdiag\b|audit|bilan de compétences|étude de faisabilité|flash diag|scoring/i.test(t)) return "Étude & diagnostic";
+  if (/diagnostics?|\bdiags?\b|\baudits?\b|bilan de compétences|étude de faisabilité|flash diag|scoring/i.test(t)) return "Étude & diagnostic";
   // 4. Formation (apprentissage, alternance, PDC, tuteur, etc.)
-  if (/apprentissage|professionnalisation|alternance|tuteur|tutorale|maître d'apprentissage|plan de développement des compétences|pdc|click ?& ?form|pro-?a|cléa|poec|poei|afest|formation/i.test(t)) return "Formation";
+  // Mots-clés bornés (\b) avec pluriel optionnel : évite les faux positifs du type
+  // "formation" détecté à l'intérieur de "transformation" (bug trouvé sur PM'up).
+  if (/\bapprentissages?\b|professionnalisation|\balternances?\b|\btuteurs?\b|tutorale|maître d'apprentissage|plan de développement des compétences|\bpdc\b|click ?& ?form|pro-?a|cléa|poec|poei|afest|\bformations?\b/i.test(t)) return "Formation";
   // 5. Accompagnement (programme, conseil, mentorat)
-  if (/accompagnement|programme|conseil|mentorat|prestation|coaching/i.test(t)) return "Accompagnement";
+  if (/accompagnements?|programmes?|\bconseils?\b|mentorat|prestations?|coaching/i.test(t)) return "Accompagnement";
   // 7. Portail
   if (aide.id && aide.id.startsWith("region_portail_")) return "Annuaire";
   // Défaut : subvention
