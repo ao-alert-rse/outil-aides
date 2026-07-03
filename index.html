@@ -189,6 +189,34 @@
     line-height: 1.8;
   }
 
+  /* résultats de recherche par nom */
+  .resultats-recherche { max-width: 640px; margin: 40px auto; }
+  .resultats-titre {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: var(--gris);
+    margin-bottom: 16px;
+  }
+  .resultat-entreprise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    border: 1.5px solid var(--sable);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .resultat-entreprise:hover { border-color: var(--vert-clair); background: var(--mousse); }
+  .resultat-nom { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 15px; color: var(--ardoise); }
+  .resultat-detail { font-family: 'DM Mono', monospace; font-size: 12px; color: var(--gris); }
+
   /* fiche entreprise */
   .entreprise-card {
     background: white;
@@ -764,8 +792,8 @@
 <div class="form-zone">
   <div class="form-grid">
     <div class="field">
-      <label>Numéro SIRET</label>
-      <input type="text" id="siret" placeholder="ex. 35292749400056" maxlength="23" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 14)">
+      <label>SIRET ou nom de l'entreprise</label>
+      <input type="text" id="siret" placeholder="ex. 35292749400056 ou Decathlon" maxlength="80">
     </div>
     <button class="btn-search" onclick="lancer()">Rechercher →</button>
     <button class="btn-reset" onclick="reinitialiser()">Réinitialiser</button>
@@ -1304,15 +1332,71 @@ function rendreConventions(e) {
 }
 
 async function lancer() {
-  const siret = document.getElementById("siret").value.trim().replace(/\s/g,"");
-  const opcoManuel = document.getElementById("opco").value;
+  const saisie = document.getElementById("siret").value.trim();
+  const digitsOnly = saisie.replace(/\D/g, "");
+  const ressembleAUnSiret = /^[\d\s.\-]+$/.test(saisie) && digitsOnly.length === 14;
 
-  // validation SIRET uniquement — l'OPCO est maintenant auto-détecté
-  if (siret.length !== 14 || isNaN(siret)) {
-    afficherErreur("Le SIRET doit contenir exactement 14 chiffres.");
+  if (ressembleAUnSiret) {
+    await lancerParSiret(digitsOnly);
     return;
   }
 
+  if (saisie.length < 3) {
+    afficherErreur("Saisissez un SIRET (14 chiffres) ou au moins 3 caractères du nom de l'entreprise.");
+    return;
+  }
+
+  await rechercherParNom(saisie);
+}
+
+async function rechercherParNom(nom) {
+  const main = document.getElementById("main");
+  main.innerHTML = `<div class="loader active">Recherche de « ${nom} »…<div class="loader-bar"></div></div>`;
+  try {
+    const url = `https://recherche-entreprises.api.gouv.fr/search?q=${encodeURIComponent(nom)}&per_page=8`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error(`API indisponible (HTTP ${r.status})`);
+    const data = await r.json();
+    if (!data.results || data.results.length === 0) {
+      afficherErreur(`Aucune entreprise trouvée pour « ${nom} ». Essayez avec le SIRET directement.`);
+      return;
+    }
+    afficherResultatsRecherche(data.results, nom);
+  } catch (err) {
+    afficherErreur(`Erreur de recherche : ${err.message}`);
+  }
+}
+
+function afficherResultatsRecherche(results, nomRecherche) {
+  const main = document.getElementById("main");
+  const items = results.map(e => {
+    const siege = e.siege || {};
+    const siret = siege.siret || "";
+    const nom = e.nom_complet || e.nom_raison_sociale || "N/A";
+    const adresse = [siege.code_postal, siege.libelle_commune].filter(Boolean).join(" ");
+    if (!siret) return "";
+    return `
+      <button class="resultat-entreprise" onclick="selectionnerEntreprise('${siret}')">
+        <span class="resultat-nom">${nom}</span>
+        <span class="resultat-detail">${siret}${adresse ? " — " + adresse : ""}</span>
+      </button>
+    `;
+  }).join("");
+  main.innerHTML = `
+    <div class="resultats-recherche">
+      <p class="resultats-titre">${results.length} entreprise(s) trouvée(s) pour « ${nomRecherche} » — choisissez la bonne :</p>
+      ${items}
+    </div>
+  `;
+}
+
+function selectionnerEntreprise(siret) {
+  document.getElementById("siret").value = siret;
+  lancerParSiret(siret);
+}
+
+async function lancerParSiret(siret) {
+  const opcoManuel = document.getElementById("opco").value;
   const main = document.getElementById("main");
   main.innerHTML = `<div class="loader active">Interrogation de l'API entreprises…<div class="loader-bar"></div></div>`;
 
