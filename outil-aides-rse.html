@@ -556,8 +556,6 @@
     .cumul-sep { color: #999 !important; }
     .cumul-note { color: #555 !important; font-size: 9pt !important; margin-top: 8px; line-height: 1.4; }
     .cumul-vide { color: #999 !important; font-size: 11pt !important; }
-    .minimis-alert { background: #FFF8F0 !important; border-color: #F5C98A !important; color: #7A4A10 !important; font-size: 9pt !important; }
-    .minimis-alert strong { color: #C85A1E !important; }
 
     .aides-liste { display: block !important; }
     .aides-liste::before {
@@ -636,17 +634,6 @@
     line-height: 1.5;
   }
   .cumul-note strong { color: #fff; }
-  .minimis-alert {
-    margin-top: 14px;
-    padding: 10px 14px;
-    background: rgba(245, 201, 138, 0.12);
-    border: 1px solid #F5C98A;
-    border-radius: 6px;
-    font-size: 11.5px;
-    color: var(--sable);
-    line-height: 1.5;
-  }
-  .minimis-alert strong { color: #F5C98A; }
 
   .aide-lien a {
     display: inline-flex;
@@ -815,7 +802,6 @@
 const AIDES = [
   {
     id: "atlas_pdc_moins11",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Atlas (< 11 salariés)",
     opco: ["atlas"],
@@ -832,7 +818,6 @@ const AIDES = [
   },
   {
     id: "atlas_pdc_11_49",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Atlas (11 à 49 salariés)",
     opco: ["atlas"],
@@ -849,7 +834,6 @@ const AIDES = [
   },
   {
     id: "atlas_pdc_50_299",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Atlas (50 à 299 salariés)",
     opco: ["atlas"],
@@ -866,7 +850,6 @@ const AIDES = [
   },
   {
     id: "atlas_bonus_tee_1_49",
-    minimis: false,
     type: "OPCO",
     nom: "Bonus Transition écologique — Atlas (1 à 49 salariés)",
     opco: ["atlas"],
@@ -883,7 +866,6 @@ const AIDES = [
   },
   {
     id: "atlas_bonus_tee_50_299",
-    minimis: false,
     type: "OPCO",
     nom: "Bonus Transition écologique — Atlas (50 à 299 salariés)",
     opco: ["atlas"],
@@ -900,7 +882,6 @@ const AIDES = [
   },
   {
     id: "atlas_bonus_tee_300plus",
-    minimis: false,
     type: "OPCO",
     nom: "Bonus Transition écologique — Atlas (300 salariés et +)",
     opco: ["atlas"],
@@ -917,7 +898,6 @@ const AIDES = [
   },
   {
     id: "atlas_expert_rh",
-    minimis: false,
     type: "OPCO",
     nom: "expertAtlas — Prestation d'appui conseil RH",
     opco: ["atlas"],
@@ -935,7 +915,6 @@ const AIDES = [
   },
   {
     id: "opco2i_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage — OPCO 2i",
     opco: ["opco2i"],
@@ -952,7 +931,6 @@ const AIDES = [
   },
   {
     id: "opco2i_contrat_pro",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat de professionnalisation — OPCO 2i",
     opco: ["opco2i"],
@@ -969,7 +947,6 @@ const AIDES = [
   },
   {
     id: "opco2i_maitre_apprentissage",
-    minimis: false,
     type: "OPCO",
     nom: "Formation maître d'apprentissage / tuteur — OPCO 2i",
     opco: ["opco2i"],
@@ -986,7 +963,6 @@ const AIDES = [
   },
   {
     id: "opco2i_fonction_tutorale",
-    minimis: false,
     type: "OPCO",
     nom: "Exercice de la fonction tutorale (apprentissage) — OPCO 2i",
     opco: ["opco2i"],
@@ -1003,7 +979,6 @@ const AIDES = [
   },
   {
     id: "opco2i_forfait_premier_equipement",
-    minimis: false,
     type: "OPCO",
     nom: "Forfait premier équipement apprenti — OPCO 2i",
     opco: ["opco2i"],
@@ -1020,7 +995,6 @@ const AIDES = [
   },
   {
     id: "opcoep_pdc_1_2",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — OPCO EP (1 à 2 salariés)",
     opco: ["opcoep"],
@@ -1037,7 +1011,6 @@ const AIDES = [
   },
   {
     id: "opcoep_pdc_3_6",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — OPCO EP (3 à 6 salariés)",
     opco: ["opcoep"],
@@ -1054,7 +1027,6 @@ const AIDES = [
   },
   {
     id: "opcoep_pdc_7_10",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — OPCO EP (7 à 10 salariés)",
     opco: ["opcoep"],
@@ -1071,7 +1043,6 @@ const AIDES = [
   },
   {
     id: "opcoep_pdc_11_49",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — OPCO EP (11 à 49 salariés)",
     opco: ["opcoep"],
@@ -1088,7 +1059,6 @@ const AIDES = [
   },
   {
     id: "opcoep_tee_hors_plafond",
-    minimis: false,
     type: "OPCO",
     nom: "Formation transition écologique — OPCO EP (hors plafond)",
     opco: ["opcoep"],
@@ -1105,7 +1075,6 @@ const AIDES = [
   },
   {
     id: "mte_diag_eco_flux",
-    minimis: true,
     type: "TEE",
     nom: "Diag Eco-Flux — Plan d'action énergie",
     opco: [],
@@ -1123,7 +1092,6 @@ const AIDES = [
   },
   {
     id: "mte_cap_decarbonation",
-    minimis: true,
     type: "TEE",
     nom: "Cap Décarbonation — Bilan carbone + plan d'action",
     opco: [],
@@ -1141,7 +1109,6 @@ const AIDES = [
   {
     id: "mte_diag_tee_rh",
     plafond_variable: true,
-    minimis: true,
     type: "TEE",
     nom: "Diag Accompagnement TEE RH",
     opco: [],
@@ -1158,7 +1125,6 @@ const AIDES = [
   },
   {
     id: "mte_cee",
-    minimis: false,
     type: "TEE",
     nom: "Certificats d'Économies d'Énergie (CEE)",
     opco: [],
@@ -1175,7 +1141,6 @@ const AIDES = [
   },
   {
     id: "akto_proprete_apprentissage",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage — AKTO Propreté & Services",
     opco: ["akto"],
@@ -1193,7 +1158,6 @@ const AIDES = [
   },
   {
     id: "akto_proprete_contrat_pro",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat de professionnalisation — AKTO Propreté & Services",
     opco: ["akto"],
@@ -1211,7 +1175,6 @@ const AIDES = [
   },
   {
     id: "akto_proprete_proa",
-    minimis: false,
     type: "OPCO",
     nom: "Reconversion ou Promotion par Alternance (Pro-A) — AKTO Propreté",
     opco: ["akto"],
@@ -1229,7 +1192,6 @@ const AIDES = [
   },
   {
     id: "akto_proprete_pdc_tpe",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (TPE/PME) — AKTO Propreté",
     opco: ["akto"],
@@ -1247,7 +1209,6 @@ const AIDES = [
   },
   {
     id: "akto_proprete_clea",
-    minimis: false,
     type: "OPCO",
     nom: "Certification CléA — AKTO Propreté",
     opco: ["akto"],
@@ -1265,7 +1226,6 @@ const AIDES = [
   },
   {
     id: "akto_proprete_afest",
-    minimis: false,
     type: "OPCO",
     nom: "AFEST (Action de Formation En Situation de Travail) — AKTO Propreté",
     opco: ["akto"],
@@ -1283,7 +1243,6 @@ const AIDES = [
   },
   {
     id: "afdas_pdc_moins11",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (TPE < 11 salariés) — AFDAS",
     opco: ["afdas"],
@@ -1300,7 +1259,6 @@ const AIDES = [
   },
   {
     id: "afdas_pdc_11_49",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (PME 11-49 salariés) — AFDAS",
     opco: ["afdas"],
@@ -1317,7 +1275,6 @@ const AIDES = [
   },
   {
     id: "afdas_tuteur",
-    minimis: false,
     type: "OPCO",
     nom: "Indemnité tuteur (apprentissage/professionnalisation) — AFDAS",
     opco: ["afdas"],
@@ -1334,7 +1291,6 @@ const AIDES = [
   },
   {
     id: "afdas_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage / professionnalisation — AFDAS",
     opco: ["afdas"],
@@ -1351,7 +1307,6 @@ const AIDES = [
   },
   {
     id: "constructys_pdc_batiment_moins11",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Bâtiment <11 salariés — Constructys",
     opco: ["constructys"],
@@ -1368,7 +1323,6 @@ const AIDES = [
   },
   {
     id: "constructys_pdc_batiment_11_49",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Bâtiment 11-49 salariés — Constructys",
     opco: ["constructys"],
@@ -1385,7 +1339,6 @@ const AIDES = [
   },
   {
     id: "constructys_pdc_tp_moins11",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Travaux Publics <11 salariés — Constructys",
     opco: ["constructys"],
@@ -1402,7 +1355,6 @@ const AIDES = [
   },
   {
     id: "constructys_pdc_tp_accord",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Travaux Publics <50 salariés (avec accord) — Constructys",
     opco: ["constructys"],
@@ -1419,7 +1371,6 @@ const AIDES = [
   },
   {
     id: "constructys_complement_pro_batiment",
-    minimis: false,
     type: "OPCO",
     nom: "Complément contrat de professionnalisation — Bâtiment <11 salariés — Constructys",
     opco: ["constructys"],
@@ -1436,7 +1387,6 @@ const AIDES = [
   },
   {
     id: "constructys_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage / professionnalisation — Constructys",
     opco: ["constructys"],
@@ -1453,7 +1403,6 @@ const AIDES = [
   },
   {
     id: "ocapiat_pdc_moins11",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (TPE <11 salariés) — OCAPIAT",
     opco: ["ocapiat"],
@@ -1470,7 +1419,6 @@ const AIDES = [
   },
   {
     id: "ocapiat_pdc_11_49",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (PME 11-49 salariés) — OCAPIAT",
     opco: ["ocapiat"],
@@ -1487,7 +1435,6 @@ const AIDES = [
   },
   {
     id: "ocapiat_bilan_competences",
-    minimis: false,
     type: "OPCO",
     nom: "Bilan de compétences — OCAPIAT",
     opco: ["ocapiat"],
@@ -1504,7 +1451,6 @@ const AIDES = [
   },
   {
     id: "ocapiat_boost_competences",
-    minimis: false,
     type: "OPCO",
     nom: "Boost Compétences (formation externe) — OCAPIAT",
     opco: ["ocapiat"],
@@ -1521,7 +1467,6 @@ const AIDES = [
   },
   {
     id: "ocapiat_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage / professionnalisation — OCAPIAT",
     opco: ["ocapiat"],
@@ -1538,7 +1483,6 @@ const AIDES = [
   },
   {
     id: "opcosante_pdc_sssms",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Branche SSSMS — OPCO Santé",
     opco: ["sante"],
@@ -1556,7 +1500,6 @@ const AIDES = [
   },
   {
     id: "opcosante_pdc_hp",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Hospitalisation privée — OPCO Santé",
     opco: ["sante"],
@@ -1573,7 +1516,6 @@ const AIDES = [
   },
   {
     id: "opcosante_pdc_spsti",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — Services de santé au travail (SPSTI) — OPCO Santé",
     opco: ["sante"],
@@ -1590,7 +1532,6 @@ const AIDES = [
   },
   {
     id: "opcosante_apprenti_handicape",
-    minimis: false,
     type: "OPCO",
     nom: "Majoration apprenti reconnu travailleur handicapé — OPCO Santé",
     opco: ["sante"],
@@ -1607,7 +1548,6 @@ const AIDES = [
   },
   {
     id: "opcosante_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage / professionnalisation — OPCO Santé",
     opco: ["sante"],
@@ -1624,7 +1564,6 @@ const AIDES = [
   },
   {
     id: "uniformation_pdc_moins50",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (TPE/PME <50 salariés) — Uniformation",
     opco: ["cohesion-sociale"],
@@ -1641,7 +1580,6 @@ const AIDES = [
   },
   {
     id: "uniformation_siae",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences — SIAE (insertion économique) — Uniformation",
     opco: ["cohesion-sociale"],
@@ -1658,7 +1596,6 @@ const AIDES = [
   },
   {
     id: "uniformation_aefma_handicap",
-    minimis: false,
     type: "OPCO",
     nom: "AEFMA — Aide Maître d'Apprentissage (apprenti handicapé) — Uniformation",
     opco: ["cohesion-sociale"],
@@ -1675,7 +1612,6 @@ const AIDES = [
   },
   {
     id: "uniformation_aefma_standard",
-    minimis: false,
     type: "OPCO",
     nom: "AEFMA — Aide Maître d'Apprentissage (standard) — Uniformation",
     opco: ["cohesion-sociale"],
@@ -1692,7 +1628,6 @@ const AIDES = [
   },
   {
     id: "uniformation_pic_iae",
-    minimis: false,
     type: "OPCO",
     nom: "PIC IAE — Plan d'Investissement Compétences Insertion — Uniformation",
     opco: ["cohesion-sociale"],
@@ -1709,7 +1644,6 @@ const AIDES = [
   },
   {
     id: "uniformation_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat d'apprentissage / professionnalisation — Uniformation",
     opco: ["cohesion-sociale"],
@@ -1726,7 +1660,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_pdc_moins11",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (TPE <11 salariés) — OPCO Commerce",
     opco: ["commerce"],
@@ -1743,7 +1676,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_pdc_11_49",
-    minimis: false,
     type: "OPCO",
     nom: "Plan de développement des compétences (PME 11-49 salariés) — OPCO Commerce",
     opco: ["commerce"],
@@ -1760,7 +1692,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_apprentissage_couts",
-    minimis: false,
     type: "OPCO",
     nom: "Coût-contrat apprentissage par niveau RNCP — OPCO Commerce",
     opco: ["commerce"],
@@ -1777,7 +1708,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_eft_apprentissage",
-    minimis: false,
     type: "OPCO",
     nom: "EFT — Exercice de la Fonction Tutorale (apprentissage) — OPCO Commerce",
     opco: ["commerce"],
@@ -1794,7 +1724,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_formation_tuteur",
-    minimis: false,
     type: "OPCO",
     nom: "Formation Tuteur / Maître d'apprentissage — OPCO Commerce",
     opco: ["commerce"],
@@ -1811,7 +1740,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_click_form",
-    minimis: false,
     type: "OPCO",
     nom: "Click & Form (catalogue formations) — OPCO Commerce",
     opco: ["commerce"],
@@ -1828,7 +1756,6 @@ const AIDES = [
   },
   {
     id: "opcommerce_alternance",
-    minimis: false,
     type: "OPCO",
     nom: "Contrat de professionnalisation — OPCO Commerce",
     opco: ["commerce"],
@@ -1845,7 +1772,6 @@ const AIDES = [
   },
   {
     id: "bpi_pret_vert",
-    minimis: false,
     type: "TEE",
     nom: "Prêt Vert — Bpifrance",
     opco: [],
@@ -1862,7 +1788,6 @@ const AIDES = [
   },
   {
     id: "bpi_pret_action_climat",
-    minimis: false,
     type: "TEE",
     nom: "Prêt Action Climat — Bpifrance",
     opco: [],
@@ -1879,7 +1804,6 @@ const AIDES = [
   },
   {
     id: "bpi_accelerateur_decarbonation",
-    minimis: true,
     type: "TEE",
     nom: "Accélérateur Décarbonation — Bpifrance",
     opco: [],
@@ -1897,7 +1821,6 @@ const AIDES = [
   },
   {
     id: "bpi_diag_decarbon_action",
-    minimis: true,
     type: "TEE",
     nom: "Diag Décarbon'Action — Bpifrance",
     opco: [],
@@ -1915,7 +1838,6 @@ const AIDES = [
   },
   {
     id: "bpi_diag_ecoconception",
-    minimis: true,
     type: "TEE",
     nom: "Diag Écoconception — Bpifrance",
     opco: [],
@@ -1933,7 +1855,6 @@ const AIDES = [
   },
   {
     id: "bpi_garantie_dev_vert",
-    minimis: false,
     type: "TEE",
     nom: "Garantie Développement Vert — Bpifrance",
     opco: [],
@@ -1951,7 +1872,6 @@ const AIDES = [
   },
   {
     id: "pcrh_tpe_pme",
-    minimis: null,
     type: "RH",
     nom: "Prestation de Conseil en Ressources Humaines (PCRH)",
     opco: [],
@@ -1969,7 +1889,6 @@ const AIDES = [
   },
   {
     id: "bpi_mission_conseil_rse",
-    minimis: true,
     type: "RSE",
     nom: "Mission de conseil RSE — Bpifrance",
     opco: [],
@@ -1987,7 +1906,6 @@ const AIDES = [
   },
   {
     id: "rse_diag_rse_bpi",
-    minimis: true,
     type: "RSE",
     nom: "Mission de conseil Stratégie Environnement — Bpifrance",
     opco: [],
@@ -2005,7 +1923,6 @@ const AIDES = [
   },
   {
     id: "idf_pmup",
-    minimis: false,
     type: "DEV",
     nom: "PM'up — Région Île-de-France",
     opco: [],
@@ -2023,7 +1940,6 @@ const AIDES = [
   },
   {
     id: "bpi_diag_impact_env",
-    minimis: true,
     type: "RSE",
     nom: "Diag Impact Environnemental — Bpifrance",
     opco: [],
@@ -2041,7 +1957,6 @@ const AIDES = [
   },
   {
     id: "bpi_diag_adaptation",
-    minimis: true,
     type: "TEE",
     nom: "Diag Adaptation au changement climatique — Bpifrance",
     opco: [],
@@ -2059,7 +1974,6 @@ const AIDES = [
   },
   {
     id: "bpi_diag_perfimmo",
-    minimis: true,
     type: "TEE",
     nom: "Diag PerfImmo — Bpifrance",
     opco: [],
@@ -2077,7 +1991,6 @@ const AIDES = [
   },
   {
     id: "ue_fse_plus",
-    minimis: null,
     type: "RH",
     nom: "FSE+ 2021-2027 — Fonds social européen plus",
     opco: [],
@@ -2094,7 +2007,6 @@ const AIDES = [
   },
   {
     id: "idf_pret_tee",
-    minimis: false,
     type: "TEE",
     nom: "Prêt Transition Écologique IdF — Région / Bpifrance",
     opco: [],
@@ -2112,7 +2024,6 @@ const AIDES = [
   },
   {
     id: "idf_fonds_decarbonation",
-    minimis: false,
     type: "TEE",
     nom: "Fonds IdF Décarbonation — Région Île-de-France",
     opco: [],
@@ -2130,7 +2041,6 @@ const AIDES = [
   },
   {
     id: "idf_zero_dechet",
-    minimis: null,
     type: "TEE",
     nom: "Zéro Déchet et Économie Circulaire — Région Île-de-France",
     opco: [],
@@ -2148,7 +2058,6 @@ const AIDES = [
   },
   {
     id: "idf_rse_inclusion",
-    minimis: true,
     type: "RSE",
     nom: "Accompagnement RSE & Inclusion — Région Île-de-France / Campus Inclusion",
     opco: [],
@@ -2166,7 +2075,6 @@ const AIDES = [
   },
   {
     id: "region_portail_84",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Auvergne-Rhône-Alpes",
     opco: [],
@@ -2184,7 +2092,6 @@ const AIDES = [
   },
   {
     id: "region_portail_27",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Bourgogne-Franche-Comté",
     opco: [],
@@ -2202,7 +2109,6 @@ const AIDES = [
   },
   {
     id: "region_portail_53",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Bretagne",
     opco: [],
@@ -2220,7 +2126,6 @@ const AIDES = [
   },
   {
     id: "region_portail_24",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Centre-Val de Loire",
     opco: [],
@@ -2238,7 +2143,6 @@ const AIDES = [
   },
   {
     id: "region_portail_94",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Corse",
     opco: [],
@@ -2256,7 +2160,6 @@ const AIDES = [
   },
   {
     id: "region_portail_44",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Grand Est",
     opco: [],
@@ -2274,7 +2177,6 @@ const AIDES = [
   },
   {
     id: "region_portail_32",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Hauts-de-France",
     opco: [],
@@ -2292,7 +2194,6 @@ const AIDES = [
   },
   {
     id: "region_portail_28",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Normandie",
     opco: [],
@@ -2310,7 +2211,6 @@ const AIDES = [
   },
   {
     id: "region_portail_75",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Nouvelle-Aquitaine",
     opco: [],
@@ -2328,7 +2228,6 @@ const AIDES = [
   },
   {
     id: "region_portail_76",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Occitanie",
     opco: [],
@@ -2346,7 +2245,6 @@ const AIDES = [
   },
   {
     id: "region_portail_52",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Pays de la Loire",
     opco: [],
@@ -2364,7 +2262,6 @@ const AIDES = [
   },
   {
     id: "region_portail_93",
-    minimis: false,
     type: "DEV",
     nom: "Portail des aides régionales — Provence-Alpes-Côte d'Azur",
     opco: [],
@@ -2382,7 +2279,6 @@ const AIDES = [
   },
   {
     id: "cee_indus_standardise",
-    minimis: false,
     type: "TEE",
     nom: "CEE Standardisées — Secteur industriel",
     opco: [],
@@ -2399,7 +2295,6 @@ const AIDES = [
   },
   {
     id: "cee_indus_specifiques",
-    minimis: false,
     type: "TEE",
     nom: "CEE Spécifiques — Opérations sur mesure",
     opco: [],
@@ -2416,7 +2311,6 @@ const AIDES = [
   },
   {
     id: "ademe_tremplin_pme",
-    minimis: true,
     type: "TEE",
     nom: "Tremplin pour la transition écologique des PME — ADEME",
     opco: [],
@@ -2433,7 +2327,6 @@ const AIDES = [
   },
   {
     id: "bpi_pret_nouvelle_industrie",
-    minimis: false,
     type: "TEE",
     nom: "Prêt Nouvelle Industrie — Bpifrance",
     opco: [],
@@ -2450,7 +2343,6 @@ const AIDES = [
   },
   {
     id: "ue_feder",
-    minimis: null,
     type: "TEE",
     nom: "FEDER 2021-2027 — Fonds européen de développement régional",
     opco: [],
@@ -2468,7 +2360,6 @@ const AIDES = [
   {
     id: "ademe_act_pas_a_pas_industrie",
     plafond_variable: true,
-    minimis: true,
     type: "TEE",
     nom: "ACT Pas à Pas — Développer sa stratégie de décarbonation (Pacte Industrie)",
     opco: [],
@@ -2486,7 +2377,6 @@ const AIDES = [
   },
   {
     id: "ademe_pacte_entreprises_act",
-    minimis: true,
     type: "TEE",
     nom: "ACT Pas-à-Pas et ACT Évaluation — Pacte Entreprises (structures non industrielles)",
     opco: [],
@@ -2506,7 +2396,6 @@ const AIDES = [
   {
     id: "ademe_pacte_industrie_coaching_financement",
     plafond_variable: true,
-    minimis: true,
     type: "TEE",
     nom: "Concrétiser son projet d'investissement bas carbone ou d'économies d'énergie — Coaching Financement (Pacte Industrie)",
     opco: [],
@@ -2525,7 +2414,6 @@ const AIDES = [
   },
   {
     id: "vehicules_prime_retrofit",
-    minimis: true,
     type: "TEE",
     nom: "Prime au Rétrofit électrique",
     opco: [],
@@ -2543,7 +2431,6 @@ const AIDES = [
   {
     id: "bpi_aap_premiere_usine",
     plafond_variable: true,
-    minimis: false,
     type: "DEV",
     nom: "AAP Première Usine — France 2030 (Bpifrance)",
     opco: [],
@@ -2563,7 +2450,6 @@ const AIDES = [
   {
     id: "ara_financement_energie",
     plafond_variable: true,
-    minimis: null,
     type: "TEE",
     nom: "Financer des projets innovants et/ou expérimentaux autour de l'énergie — Région Auvergne-Rhône-Alpes",
     opco: [],
@@ -2581,7 +2467,6 @@ const AIDES = [
   },
   {
     id: "hdf_btr3",
-    minimis: true,
     type: "TEE",
     nom: "Booster Transformation Rev3 (BTR3) — Région Hauts-de-France",
     opco: [],
@@ -2599,7 +2484,6 @@ const AIDES = [
   },
   {
     id: "na_usine_du_futur",
-    minimis: true,
     type: "TEE",
     nom: "Usine du Futur — Région Nouvelle-Aquitaine",
     opco: [],
@@ -2619,7 +2503,6 @@ const AIDES = [
   {
     id: "na_competitivite_energetique",
     plafond_variable: true,
-    minimis: null,
     type: "TEE",
     nom: "Compétitivité énergétique des entreprises — Région Nouvelle-Aquitaine",
     opco: [],
@@ -2638,7 +2521,6 @@ const AIDES = [
   },
   {
     id: "bfc_decarbonation_aide_conseil",
-    minimis: true,
     type: "TEE",
     nom: "Décarbonation des industries – Aide au conseil — Région Bourgogne-Franche-Comté",
     opco: [],
@@ -2658,7 +2540,6 @@ const AIDES = [
   },
   {
     id: "bzh_pass_transitions",
-    minimis: true,
     type: "TEE",
     nom: "PASS Transitions — Région Bretagne",
     opco: [],
@@ -2678,7 +2559,6 @@ const AIDES = [
   },
   {
     id: "cvl_cap_te",
-    minimis: true,
     type: "TEE",
     nom: "CAP TE – Transition Écologique — Région Centre-Val de Loire",
     opco: [],
@@ -2696,7 +2576,6 @@ const AIDES = [
   },
   {
     id: "ge_module_rse",
-    minimis: true,
     type: "RSE",
     nom: "Module Stratégie d'Entreprise : RSE — Région Grand Est",
     opco: [],
@@ -2715,7 +2594,6 @@ const AIDES = [
   },
   {
     id: "pdl_conseil",
-    minimis: true,
     type: "RSE",
     nom: "Pays de la Loire Conseil",
     opco: [],
@@ -2733,7 +2611,6 @@ const AIDES = [
   },
   {
     id: "pdl_ami_industrie_futur",
-    minimis: true,
     type: "TEE",
     nom: "AMI Industrie du Futur — Région Pays de la Loire",
     opco: [],
@@ -2751,7 +2628,6 @@ const AIDES = [
   },
   {
     id: "occ_pass_transfo_eco",
-    minimis: true,
     type: "TEE",
     nom: "Pass Transformation Écologique — Région Occitanie",
     opco: [],
@@ -2771,7 +2647,6 @@ const AIDES = [
   {
     id: "occ_pass_conseil_rh",
     plafond_variable: true,
-    minimis: true,
     type: "RH",
     nom: "Pass Conseil RH — Région Occitanie",
     opco: [],
@@ -2790,7 +2665,6 @@ const AIDES = [
   },
   {
     id: "norm_impulsion_environnement",
-    minimis: null,
     type: "TEE",
     nom: "Impulsion Environnement — Région Normandie",
     opco: [],
@@ -2808,7 +2682,6 @@ const AIDES = [
   },
   {
     id: "paca_cedre_ambition",
-    minimis: true,
     type: "RSE",
     nom: "CEDRE Ambition — Région Provence-Alpes-Côte d'Azur",
     opco: [],
@@ -3053,11 +2926,8 @@ function estimationLabel(aide) {
   return null;
 }
 
-const PLAFOND_MINIMIS = 300000; // aides de minimis : 300 000 € sur 3 exercices fiscaux glissants (règlement UE 2023/2831)
-
 function calculerCumul(aides) {
   let sumMin = 0, sumMax = 0, nbChiffrees = 0, nbNonChiffrees = 0;
-  let sumMinimisMax = 0, nbMinimisAVerifier = 0;
   aides.forEach(a => {
     const mn = a.montant_min, mx = a.montant_max;
     if ((mn === null || mn === undefined) && (mx === null || mx === undefined)) {
@@ -3068,13 +2938,8 @@ function calculerCumul(aides) {
       sumMin += (mn !== null && mn !== undefined) ? mn : (mx || 0);
       sumMax += (mx !== null && mx !== undefined) ? mx : (mn || 0);
     }
-    if (a.minimis === true) {
-      sumMinimisMax += (mx !== null && mx !== undefined) ? mx : (mn || 0);
-    } else if (a.minimis === null || a.minimis === undefined) {
-      nbMinimisAVerifier++;
-    }
   });
-  return { sumMin, sumMax, nbChiffrees, nbNonChiffrees, sumMinimisMax, nbMinimisAVerifier };
+  return { sumMin, sumMax, nbChiffrees, nbNonChiffrees };
 }
 
 function badgeCloture(aide) {
@@ -3162,7 +3027,6 @@ function rendreBarreSelection() {
         <span class="cumul-vide">Cochez des aides pour estimer votre cumul</span>
       </div>
       <div class="cumul-note" id="cumul-note"></div>
-      <div class="minimis-alert" id="minimis-alert" style="display:none;"></div>
     </div>
   `;
 }
@@ -3177,7 +3041,6 @@ function recalculerSelection() {
   const elDetail = document.getElementById('cumul-detail');
   const elVal = document.getElementById('cumul-val');
   const elNote = document.getElementById('cumul-note');
-  const elMinimis = document.getElementById('minimis-alert');
   if (!elCount || !elVal || !elNote) return;
 
   elCount.textContent = aidesSel.length;
@@ -3186,23 +3049,7 @@ function recalculerSelection() {
     if (elDetail) elDetail.textContent = '';
     elVal.innerHTML = '<span class="cumul-vide">Cochez des aides pour estimer votre cumul</span>';
     elNote.innerHTML = '';
-    if (elMinimis) elMinimis.style.display = 'none';
     return;
-  }
-
-  if (elMinimis) {
-    if (c.sumMinimisMax === 0 && c.nbMinimisAVerifier === 0) {
-      elMinimis.style.display = 'none';
-    } else {
-      elMinimis.style.display = '';
-      const pct = Math.round((c.sumMinimisMax / PLAFOND_MINIMIS) * 100);
-      const depasse = c.sumMinimisMax > PLAFOND_MINIMIS;
-      let html = `<strong>${depasse ? "⚠ Plafond de minimis dépassé" : "Plafond de minimis"}</strong> : ${formatEUR(c.sumMinimisMax)} sur ${formatEUR(PLAFOND_MINIMIS)} (${pct}%) cumulés sur 3 exercices fiscaux glissants, à condition qu'aucune autre aide de minimis n'ait été perçue par ailleurs par l'entreprise.`;
-      if (c.nbMinimisAVerifier > 0) {
-        html += `<br>+ ${c.nbMinimisAVerifier} aide${c.nbMinimisAVerifier > 1 ? "s" : ""} sélectionnée${c.nbMinimisAVerifier > 1 ? "s" : ""} dont le régime d'aide n'est pas confirmé (à vérifier auprès de l'organisme).`;
-      }
-      elMinimis.innerHTML = html;
-    }
   }
 
   if (elDetail) elDetail.textContent = ` (${c.nbChiffrees} chiffrée${c.nbChiffrees > 1 ? "s" : ""} / ${c.nbNonChiffrees} à consulter)`;
