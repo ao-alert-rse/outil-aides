@@ -167,6 +167,14 @@ L'outil n'est plus un simple fichier local : il est désormais **déployé et pa
 - Pipeline de vérification automatisé (liens morts, dispositifs suspendus) — tournant régulièrement au lieu d'un audit manuel ponctuel
 - Nom de domaine personnalisé, si souhaité
 
+### Retrait temporaire des aides CEE (2026-07-03)
+
+Retiré **4 aides** (`mte_cee`, `cee_indus_standardise`, `cee_indus_specifiques`, `ademe_tremplin_pme`) — Certificats d'Économies d'Énergie génériques et Tremplin PME ADEME — en attendant un scraping dédié pour reconstruire cette section proprement avec des fiches précises. **Retrait fait à la fois dans `outil-aides-rse.html` (référence) et via `DELETE` direct dans la table Supabase** (rappel : depuis la migration V1, modifier le fichier local ne suffit pas, il faut aussi modifier Supabase pour que le changement soit visible sur le site).
+
+Attention à ne pas confondre avec les aides simplement *financées* par le mécanisme CEE (ACT Pas-à-Pas x2, Coaching Financement Pacte Industrie, Diag PerfImmo Bpifrance) : celles-ci restent en base, ce sont des fiches concrètes et précises, pas des vitrines — seules les aides parlant du mécanisme CEE en tant que tel ont été retirées. Une première tentative trop large (retrait de 8 aides) a été corrigée après retour de l'utilisateur.
+
+Base à **110 aides** (114 - 4).
+
 ## Notes V3 (juin 2026)
 
 - Nettoyage : passage de 131 à **99 aides**. Retraits : aides éditées par CCI (concurrence directe Felps), aides trésorerie/capital-risque hors RSE/RH/TEE, contrats secteur automobile, appels à projets ponctuels.
