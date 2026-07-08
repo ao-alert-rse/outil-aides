@@ -47,13 +47,25 @@ create policy "aides_select_authenticated"
 -- jsonb vers text[] (plus lisible/éditable dans le Table Editor Supabase,
 -- aucun changement côté application — le SDK renvoie un tableau JS dans
 -- les deux cas). À exécuter une seule fois sur une base créée avant cette
--- date :
+-- date. Passe par une colonne temporaire car Postgres n'autorise pas de
+-- sous-requête dans la clause USING d'un ALTER COLUMN TYPE :
 --
--- alter table aides alter column opco type text[]
---   using (case when opco is null then null else array(select jsonb_array_elements_text(opco)) end);
--- alter table aides alter column idcc type text[]
---   using (case when idcc is null then null else array(select jsonb_array_elements_text(idcc)) end);
--- alter table aides alter column secteur_naf type text[]
---   using (case when secteur_naf is null then null else array(select jsonb_array_elements_text(secteur_naf)) end);
--- alter table aides alter column secteur_naf_exclu type text[]
---   using (case when secteur_naf_exclu is null then null else array(select jsonb_array_elements_text(secteur_naf_exclu)) end);
+-- alter table aides add column opco_new text[];
+-- update aides set opco_new = array(select jsonb_array_elements_text(opco)) where opco is not null;
+-- alter table aides drop column opco;
+-- alter table aides rename column opco_new to opco;
+--
+-- alter table aides add column idcc_new text[];
+-- update aides set idcc_new = array(select jsonb_array_elements_text(idcc)) where idcc is not null;
+-- alter table aides drop column idcc;
+-- alter table aides rename column idcc_new to idcc;
+--
+-- alter table aides add column secteur_naf_new text[];
+-- update aides set secteur_naf_new = array(select jsonb_array_elements_text(secteur_naf)) where secteur_naf is not null;
+-- alter table aides drop column secteur_naf;
+-- alter table aides rename column secteur_naf_new to secteur_naf;
+--
+-- alter table aides add column secteur_naf_exclu_new text[];
+-- update aides set secteur_naf_exclu_new = array(select jsonb_array_elements_text(secteur_naf_exclu)) where secteur_naf_exclu is not null;
+-- alter table aides drop column secteur_naf_exclu;
+-- alter table aides rename column secteur_naf_exclu_new to secteur_naf_exclu;
