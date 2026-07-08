@@ -17,10 +17,10 @@ create table if not exists aides (
   effectif_min integer,
   effectif_max integer,
   region text,
-  secteur_naf jsonb,
-  secteur_naf_exclu jsonb,
-  opco jsonb,
-  idcc jsonb,
+  secteur_naf text[],
+  secteur_naf_exclu text[],
+  opco text[],
+  idcc text[],
   lien text,
   derniere_verif date,
   montant_min numeric,
@@ -42,3 +42,18 @@ create policy "aides_select_authenticated"
 -- a été retirée de l'outil. Si la colonne minimis existe déjà sur une base
 -- créée avant cette date, la supprimer avec :
 -- alter table aides drop column if exists minimis;
+
+-- Migration ponctuelle (2026-07-03) : conversion des colonnes tableau de
+-- jsonb vers text[] (plus lisible/éditable dans le Table Editor Supabase,
+-- aucun changement côté application — le SDK renvoie un tableau JS dans
+-- les deux cas). À exécuter une seule fois sur une base créée avant cette
+-- date :
+--
+-- alter table aides alter column opco type text[]
+--   using (case when opco is null then null else array(select jsonb_array_elements_text(opco)) end);
+-- alter table aides alter column idcc type text[]
+--   using (case when idcc is null then null else array(select jsonb_array_elements_text(idcc)) end);
+-- alter table aides alter column secteur_naf type text[]
+--   using (case when secteur_naf is null then null else array(select jsonb_array_elements_text(secteur_naf)) end);
+-- alter table aides alter column secteur_naf_exclu type text[]
+--   using (case when secteur_naf_exclu is null then null else array(select jsonb_array_elements_text(secteur_naf_exclu)) end);

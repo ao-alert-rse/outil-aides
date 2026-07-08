@@ -88,9 +88,9 @@ Une seule table, `aides`, dont la structure est documentée dans [`schema.sql`](
 | `origine` | text | Organisme(s) financeur(s) |
 | `effectif_min` / `effectif_max` | integer | Bornes d'effectif éligibles |
 | `region` | text | Code région INSEE si l'aide est régionale |
-| `secteur_naf` / `secteur_naf_exclu` | jsonb | Sections NAF incluses/exclues |
-| `opco` | jsonb | Liste des OPCO concernés (aides formation) |
-| `idcc` | jsonb | Codes IDCC concernés si l'aide cible une branche précise |
+| `secteur_naf` / `secteur_naf_exclu` | text[] | Sections NAF incluses/exclues |
+| `opco` | text[] | Liste des OPCO concernés (aides formation) |
+| `idcc` | text[] | Codes IDCC concernés si l'aide cible une branche précise |
 | `lien` | text | URL de la fiche officielle |
 | `derniere_verif` | date | Date de dernière vérification manuelle |
 | `montant_min` / `montant_max` | numeric | Bornes chiffrées pour le calculateur de cumul |
