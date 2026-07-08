@@ -1150,7 +1150,7 @@ const AIDES = [
     derniere_verif: "2026-07-02",
     montant_min: null,
     montant_max: null
-  },
+  },
   {
     id: "akto_proprete_apprentissage",
     type: "OPCO",
@@ -1983,7 +1983,7 @@ const AIDES = [
     montant_min: null,
     montant_max: 3000,
     duree: "7 jours d'intervention sur 10 mois"
-  },
+  },
   {
     id: "ue_fse_plus",
     type: "RH",
@@ -2271,7 +2271,7 @@ const AIDES = [
     derniere_verif: "2026-06-25",
     montant_min: null,
     montant_max: null
-  },
+  },
   {
     id: "bpi_pret_nouvelle_industrie",
     type: "TEE",
@@ -2303,7 +2303,7 @@ const AIDES = [
     derniere_verif: "2026-06-25",
     montant_min: null,
     montant_max: null
-  },
+  },
   {
     id: "vehicules_prime_retrofit",
     type: "TEE",
@@ -2589,6 +2589,78 @@ const AIDES = [
     montant_min: null,
     montant_max: 9500,
     duree: "3 ans, suivi semestriel par l'expert"
+  },
+  {
+    id: "ademe_act_pas_a_pas_industrie",
+    plafond_variable: true,
+    type: "TEE",
+    nom: "ACT Pas à Pas — Développer sa stratégie de décarbonation (Pacte Industrie)",
+    opco: [],
+    description: "Méthodologie d'accompagnement pour diagnostiquer la maturité carbone, définir une stratégie de décarbonation et un plan de transition (émissions scopes 1, 2 et 3), dans le cadre du Pacte Industrie.",
+    taux: "80 % pour les entreprises industrielles de moins de 250 salariés ; 40 % pour 250 salariés et plus",
+    plafond: "N/A — voir pacte-industrie.ademe.fr",
+    origine: "ADEME / Pacte Industrie (financement CEE, opéré avec l'ATEE)",
+    effectif_min: 1,
+    effectif_max: null,
+    secteur_naf: ["B", "C", "D", "E"],
+    lien: "https://pacte-industrie.ademe.fr/solutions/developper-sa-strategie-de-decarbonation-act-pas-a-pas/",
+    derniere_verif: "2026-07-02",
+    montant_min: null,
+    montant_max: null
+  },
+  {
+    id: "ademe_pacte_entreprises_act",
+    type: "TEE",
+    nom: "ACT Pas-à-Pas et ACT Évaluation — Pacte Entreprises (structures non industrielles)",
+    opco: [],
+    description: "Variante du dispositif ACT pour les structures tertiaires et non industrielles (diagnostic et évaluation de maturité carbone). Programme distinct du Pacte Industrie, nommé Pacte Entreprises. Accompagnement de 12 à 18 mois par un bureau d'études formé à la méthode ACT.",
+    taux: "60 à 80 % du coût de l'accompagnement selon la taille de l'entreprise (jusqu'à 80 % pour les micro-entreprises)",
+    plafond: "18 000 € HT de prise en charge maximum (coût total de l'accompagnement : 15 000 à 25 000 € HT selon complexité)",
+    origine: "ADEME (dispositif Mon parcours économies d'énergie, financement CEE)",
+    effectif_min: 1,
+    effectif_max: null,
+    secteur_naf_exclu: ["B", "C", "D", "E"],
+    lien: "https://agirpourlatransition.ademe.fr/entreprises/aides-financieres/catalogue/2026/pacte-entreprises-accompagnements-actr-pas-pas-et-actr-evaluation-des-structures-non-industrielles",
+    derniere_verif: "2026-07-02",
+    montant_min: null,
+    montant_max: 18000,
+    duree: "12 à 18 mois"
+  },
+  {
+    id: "ademe_pacte_industrie_coaching_financement",
+    plafond_variable: true,
+    type: "TEE",
+    nom: "Concrétiser son projet d'investissement bas carbone ou d'économies d'énergie — Coaching Financement (Pacte Industrie)",
+    opco: [],
+    description: "Coaching personnalisé sur 5 thématiques : risques technico-économiques, rentabilité financière et extra-financière, recherche de financements et subventions, gouvernance interne, montage financier collectif. Prérequis : formation Pacte Industrie sur le financement de la transition énergétique et bas carbone.",
+    taux: "Financé jusqu'à 80 % du prix de l'accompagnement",
+    plafond: "N/A — voir pacte-industrie.ademe.fr",
+    origine: "ADEME / Pacte Industrie (ATEE, financement CEE)",
+    effectif_min: 1,
+    effectif_max: null,
+    secteur_naf: ["B", "C", "D", "E"],
+    lien: "https://pacte-industrie.ademe.fr/solutions/concretiser-son-projet-d-investissement-bas-carbone-ou-d-economies-d-energie/",
+    derniere_verif: "2026-07-02",
+    montant_min: null,
+    montant_max: null,
+    duree: "2 à 5 jours"
+  },
+  {
+    id: "bpi_diag_perfimmo",
+    type: "TEE",
+    nom: "Diag PerfImmo — Bpifrance",
+    opco: [],
+    description: "Diagnostic Bpifrance de performance énergétique et environnementale du patrimoine immobilier de l'entreprise. Identifie les travaux prioritaires et la trajectoire de décarbonation des bâtiments.",
+    taux: "Subvention de 50 %, plafonnée à 8 500 €/site (dispositif CEE Pacte Entreprises)",
+    plafond: "Devis entre 3 000 € et 17 000 € HT selon surface/complexité (max 4 sites)",
+    origine: "Bpifrance",
+    effectif_min: 1,
+    effectif_max: 4999,
+    lien: "https://www.bpifrance.fr/catalogue-offres/diag-perfimmo",
+    derniere_verif: "2026-07-02",
+    montant_min: 1500,
+    montant_max: 8500,
+    duree: "10 mois"
   },
 ];
 
