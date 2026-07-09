@@ -2271,7 +2271,7 @@ const AIDES = [
     derniere_verif: "2026-06-25",
     montant_min: null,
     montant_max: null
-  },
+  },
   {
     id: "bpi_pret_nouvelle_industrie",
     type: "TEE",
@@ -2303,7 +2303,7 @@ const AIDES = [
     derniere_verif: "2026-06-25",
     montant_min: null,
     montant_max: null
-  },
+  },
   {
     id: "vehicules_prime_retrofit",
     type: "TEE",
@@ -2661,6 +2661,23 @@ const AIDES = [
     montant_min: 1500,
     montant_max: 8500,
     duree: "10 mois"
+  },
+  {
+    id: "cee_bat_th_116_gtb",
+    plafond_variable: true,
+    type: "TEE",
+    nom: "Prime CEE GTB (Gestion Technique du Bâtiment) — Fiche BAT-TH-116",
+    opco: [],
+    description: "Financement via les Certificats d'Économies d'Énergie (CEE) de l'installation d'une GTB (classe A ou B selon la norme EN 15232-1) pilotant le chauffage et, selon les cas, l'eau chaude sanitaire, le refroidissement, l'éclairage et les auxiliaires d'un bâtiment tertiaire existant (bureaux, commerces, santé, hôtellerie...). Pas de taille de bâtiment minimale. Ce dispositif finance aussi l'obligation du Décret BACS (échéance 01/01/2027 pour les bâtiments >290 kW). ATTENTION : contrairement aux autres aides de cette base, le montant en euros n'est pas fixé par un texte officiel — il dépend du prix du kWh cumac négocié avec l'obligé ou le mandataire CEE choisi (faire jouer la concurrence entre mandataires est recommandé).",
+    taux: "Jusqu'à 50 % du coût d'installation d'une GTB de classe A ou B (bonification x2 en installation neuve, x1,5 en remplacement d'un système classe C/D)",
+    plafond: "Indicatif, selon mandataire CEE : 5 à 15 € par m² de surface gérée (soit 30 à 50 % du coût d'installation, estimé à 15-45 €/m² selon la classe)",
+    origine: "Mécanisme CEE (fiche BAT-TH-116, DGEC/ADEME/ATEE) — prime versée par un obligé ou un mandataire CEE, pas une subvention publique directe",
+    effectif_min: 1,
+    effectif_max: null,
+    lien: "https://www.ecologie.gouv.fr/sites/default/files/documents/BAT-TH-116%20vA62-6%20%C3%A0%20compter%20du%2001-01-2025.pdf",
+    derniere_verif: "2026-07-03",
+    montant_min: null,
+    montant_max: null
   },
 ];
 
