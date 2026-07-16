@@ -1044,8 +1044,8 @@ const REGIONS_FR = {
 
 function matcherAides(entreprise, opco) {
   return AIDES.filter(aide => {
-    // filtre OPCO
-    if (aide.opco.length > 0 && !aide.opco.includes(opco)) return false;
+    // filtre OPCO (aide.opco peut être null si issu de Supabase, pas seulement [])
+    if (aide.opco && aide.opco.length > 0 && !aide.opco.includes(opco)) return false;
     // filtre IDCC branche : si aide.idcc est défini, au moins un IDCC de l'entreprise doit matcher
     if (aide.idcc && aide.idcc.length > 0 && entreprise.liste_idcc && entreprise.liste_idcc.length > 0) {
       const ent_idccs = entreprise.liste_idcc.map(i => String(parseInt(i, 10)));
