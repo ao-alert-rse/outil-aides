@@ -1939,7 +1939,8 @@ const AIDES = [
     nom: "PM'up — Région Île-de-France",
     opco: [],
     region: "11",
-    description: "Subvention pour PME franciliennes : transformation écologique, croissance, recrutement, international et investissements matériels/immatériels. Jusqu'à 50 % du projet financé. ATTENTION : exclut explicitement les activités de conseil aux entreprises et aux particuliers, ainsi que le conseil/maintenance/formation dans les services du numérique — non éligible pour un cabinet de conseil RSE ou une activité de conseil pur ; à vérifier au cas par cas selon la nature exacte de l'activité du client (un bureau d'études technique peut être éligible si son activité principale n'est pas classée conseil).",
+    naf_code_exclu: ["70.22Z"],
+    description: "Subvention pour PME franciliennes : transformation écologique, croissance, recrutement, international et investissements matériels/immatériels. Jusqu'à 50 % du projet financé. Source : « Guide du candidat PM'up » officiel de la Région (règlement d'intervention voté CR 105-16, modifié CP 2025-245 du 25/09/2025), section « Les entreprises relevant des secteurs exclus ». ATTENTION : exclut aussi explicitement les 'entreprises de conseil, maintenance et formation dans les services du numérique' (ESN) — non filtré automatiquement car la Région ne publie aucune correspondance code NAF officielle pour cette catégorie et la frontière avec l'édition de logiciels/numérique (filière stratégique régionale) est jugée au cas par cas ; à vérifier manuellement si le client a une activité numérique/informatique. Les bureaux d'études techniques et cabinets d'ingénierie (NAF 71.12x) ne sont pas concernés par ces exclusions.",
     taux: "Jusqu'à 50 % du projet",
     plafond: "250 000 € (375 000 € en zones reconquête)",
     origine: "Région — IdF",
@@ -2891,6 +2892,11 @@ function matcherAides(entreprise, opco) {
     if (entreprise.naf_section) {
       if (aide.secteur_naf && !aide.secteur_naf.includes(entreprise.naf_section)) return false;
       if (aide.secteur_naf_exclu && aide.secteur_naf_exclu.includes(entreprise.naf_section)) return false;
+    }
+    // filtre code NAF précis (plus fin que la section) : si le code de l'entreprise est connu
+    if (entreprise.naf && entreprise.naf !== "N/A") {
+      if (aide.naf_code_exclu && aide.naf_code_exclu.includes(entreprise.naf)) return false;
+      if (aide.naf_code && !aide.naf_code.includes(entreprise.naf)) return false;
     }
     // si effectif inconnu, on affiche toutes les aides sans filtrer
     if (entreprise.effectif === null) return true;
