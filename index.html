@@ -1067,6 +1067,11 @@ function matcherAides(entreprise, opco) {
       if (aide.secteur_naf && !aide.secteur_naf.includes(entreprise.naf_section)) return false;
       if (aide.secteur_naf_exclu && aide.secteur_naf_exclu.includes(entreprise.naf_section)) return false;
     }
+    // filtre code NAF précis (plus fin que la section) : si le code de l'entreprise est connu
+    if (entreprise.naf && entreprise.naf !== "N/A") {
+      if (aide.naf_code_exclu && aide.naf_code_exclu.includes(entreprise.naf)) return false;
+      if (aide.naf_code && !aide.naf_code.includes(entreprise.naf)) return false;
+    }
     // si effectif inconnu, on affiche toutes les aides sans filtrer
     if (entreprise.effectif === null) return true;
     // filtre effectif min

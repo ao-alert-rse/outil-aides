@@ -19,6 +19,8 @@ create table if not exists aides (
   region text,
   secteur_naf text[],
   secteur_naf_exclu text[],
+  naf_code text[],
+  naf_code_exclu text[],
   opco text[],
   idcc text[],
   lien text,
@@ -37,6 +39,13 @@ create policy "aides_select_authenticated"
   on aides for select
   to authenticated
   using (true);
+
+-- Migration ponctuelle (2026-07-17) : ajout du filtrage par code NAF précis
+-- (5 caractères, ex. "70.22Z"), en complément du filtrage par section NAF
+-- existant (secteur_naf/secteur_naf_exclu, une lettre A-U). Sur une base
+-- créée avant cette date :
+-- alter table aides add column if not exists naf_code text[];
+-- alter table aides add column if not exists naf_code_exclu text[];
 
 -- Migration ponctuelle (2026-07-03) : la fonctionnalité "plafond de minimis"
 -- a été retirée de l'outil. Si la colonne minimis existe déjà sur une base
